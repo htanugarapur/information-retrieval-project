@@ -1,0 +1,2810 @@
+{
+  "seed": "W3015883388",
+  "nodes": [
+    {
+      "id": "W2962985038",
+      "tier": 0,
+      "row": 0,
+      "kind": "candidate",
+      "title": "Reading Wikipedia to Answer Open-Domain Questions",
+      "year": 2017,
+      "cites": 1443,
+      "abstract": "This paper proposes to tackle open-domain question answering using Wikipedia as the unique knowledge source: the answer to any factoid question is a text span in a Wikipedia article. This task of machine reading at scale combines the challenges of document retrieval (finding the relevant articles) with that of machine comprehension of text (identifying the answer spans from those articles). Our approach combines a search component based on bigram hashing and TF-IDF matching with a multi-layer recurrent neural network model trained to detect answers in Wikipedia paragraphs. Our experiments on multiple existing QA datasets indicate that (1) both modules are highly competitive with respect to existing counterparts and (2) multitask learning using distant supervision on their combination is an effective complete system on this challenging task.",
+      "reqs": [],
+      "why": [
+        [
+          "wrote",
+          "author:A5051064208 \u2192 W2962985038"
+        ],
+        [
+          "authored_by",
+          "W3015883388 \u2192 author:A5051064208"
+        ],
+        [
+          "cited_by",
+          "W2115758952 \u2192 W2962985038"
+        ],
+        [
+          "cites",
+          "W4406728516 \u2192 W2962985038"
+        ],
+        [
+          "cited_by",
+          "W1801866228 \u2192 W2962985038"
+        ],
+        [
+          "cites",
+          "W2788448041 \u2192 W2962985038"
+        ]
+      ],
+      "necessity": 0.01859504132231405,
+      "verdict": {
+        "ok": false,
+        "from": 16,
+        "to": 25,
+        "control": 4.37,
+        "note": "This paper moved, but no more than removing unrelated links would.",
+        "necessity": 0.0186,
+        "p_value": 0.0645,
+        "cited_edges": [
+          "ebd8a32b5a9b8dd17",
+          "e3f89d858c930835d",
+          "e1a3905f292d165ab",
+          "e10d7e1852a69b86c",
+          "ea16dad543efb5e2c",
+          "eb076673e82428dd6",
+          "e3b8bfcb733ece1ff",
+          "e8fc5a9ca1f822f28",
+          "e4f34fe7eb4180298",
+          "e0591935c80957a4f",
+          "ef98e190e3963155f",
+          "ec7b9b97677c9a478",
+          "ec9dd92b78baf27e2",
+          "e7f2fe729a3acc4d8",
+          "efb38607d06a21a1d",
+          "e538b78c9ac2b0f01",
+          "e6c3e0d7c3565c492",
+          "e8e538485f170c0f1"
+        ]
+      }
+    },
+    {
+      "id": "W2086511124",
+      "tier": 0,
+      "row": 1,
+      "kind": "candidate",
+      "title": "The TREC-8 Question Answering Track Report",
+      "year": 1999,
+      "cites": 859,
+      "abstract": "The TREC-8 Question Answering track was the first large-scale evaluation of domain-independent question answering systems. This paper summarizes the results of the track by giving a brief overview of the different approaches taken to solve the problem. The most accurate systems found a correct response for more than 2/3 of the questions. Relatively simple bag-of-words approaches were adequate for finding answers when responses could be as long as a paragraph (250 bytes), but more sophisticated processing was necessary for more direct responses (50 bytes). The TREC-8 Question Answering track was an initial effort to bring the benefits of large-scale evaluation to bear on a question answering (QA) task. The goal in the QA task is to retrieve small snippets of text that contain the actual answer to a question rather than the document lists traditionally returned by text retrieval systems. The assumption is that users would usually prefer to be given the answer rather than find the a...",
+      "reqs": [],
+      "why": [
+        [
+          "cites",
+          "W3015883388 \u2192 W2086511124"
+        ],
+        [
+          "cites",
+          "W2029118765 \u2192 W2086511124"
+        ],
+        [
+          "cites",
+          "W2799081691 \u2192 W2086511124"
+        ],
+        [
+          "cites",
+          "W3015883388 \u2192 W2029118765"
+        ],
+        [
+          "cites",
+          "W2788448041 \u2192 W2086511124"
+        ],
+        [
+          "cites",
+          "W3118027562 \u2192 W2086511124"
+        ]
+      ],
+      "necessity": 0.034623217922606926,
+      "verdict": {
+        "ok": true,
+        "from": 9,
+        "to": 26,
+        "control": -0.3,
+        "note": "Removing the stated reason pushed this paper down the ranking.",
+        "necessity": 0.0346,
+        "p_value": 0.0323,
+        "cited_edges": [
+          "e39f9411cc2d0e668",
+          "eb2b5be92f3d4abab",
+          "e74ce9218955b1354",
+          "e8cf4cc04a94e1411",
+          "eff6cc9b7a056ff83"
+        ]
+      }
+    },
+    {
+      "id": "W2912924812",
+      "tier": 1,
+      "row": 0,
+      "kind": "candidate",
+      "title": "Natural Questions: A Benchmark for Question Answering Research",
+      "year": 2019,
+      "cites": 2061,
+      "abstract": "We present the Natural Questions corpus, a question answering data set. Questions consist of real anonymized, aggregated queries issued to the Google search engine. An annotator is presented with a question along with a Wikipedia page from the top 5 search results, and annotates a long answer (typically a paragraph) and a short answer (one or more entities) if present on the page, or marks null if no long/short answer is present. The public release consists of 307,373 training examples with single annotations; 7,830 examples with 5-way annotations for development data; and a further 7,842 examples with 5-way annotated sequestered as test data. We present experiments validating quality of the data. We also describe analysis of 25-way annotations on 302 examples, giving insights into human variability on the annotation task. We introduce robust metrics for the purposes of evaluating question answering systems; demonstrate high human upper bounds on these metrics; and establish baseline results using competitive methods drawn from related literature.",
+      "reqs": [
+        [
+          "W2962985038",
+          "2019 paper cites 2017 paper"
+        ]
+      ],
+      "why": [
+        [
+          "cites",
+          "W3015883388 \u2192 W2912924812"
+        ],
+        [
+          "cites",
+          "W3087273879 \u2192 W2912924812"
+        ],
+        [
+          "cites",
+          "W3094336525 \u2192 W2912924812"
+        ],
+        [
+          "cites",
+          "W3118027562 \u2192 W2912924812"
+        ],
+        [
+          "cited_by",
+          "W3015883388 \u2192 W3094336525"
+        ],
+        [
+          "cited_by",
+          "W3015883388 \u2192 W3087273879"
+        ]
+      ],
+      "necessity": 0.04040404040404041,
+      "verdict": {
+        "ok": true,
+        "from": 5,
+        "to": 25,
+        "control": 2.43,
+        "note": "Removing the stated reason pushed this paper down the ranking.",
+        "necessity": 0.0404,
+        "p_value": 0.0323,
+        "cited_edges": [
+          "ea6b2ae0aa33a7e0e",
+          "e52044864422e0b83",
+          "e56d5645e8e348e63",
+          "e2325f60c6c5ad193",
+          "e02d52fd8e17e4d7f",
+          "eb2b5be92f3d4abab",
+          "efd5c554fe981d734",
+          "ef98e190e3963155f",
+          "e4bbbc84b151e9005",
+          "e8cf4cc04a94e1411",
+          "e45d449e490d93dcb",
+          "e6c3e0d7c3565c492",
+          "e21da8ace68fe9fb5"
+        ]
+      }
+    },
+    {
+      "id": "W2029118765",
+      "tier": 1,
+      "row": 1,
+      "kind": "candidate",
+      "title": "Performance issues and error analysis in an open-domain question answering system",
+      "year": 2003,
+      "cites": 235,
+      "abstract": "This paper presents an in-depth analysis of a state-of-the-art Question Answering system. Several scenarios are examined: (1) the performance of each module in a serial baseline system, (2) the impact of feedbacks and the insertion of a logic prover, and (3) the impact of various retrieval strategies and lexical resources. The main conclusion is that the overall performance depends on the depth of natural language processing resources and the tools used for answer finding.",
+      "reqs": [
+        [
+          "W2086511124",
+          "2003 paper cites 1999 paper"
+        ]
+      ],
+      "why": [
+        [
+          "cites",
+          "W3015883388 \u2192 W2029118765"
+        ],
+        [
+          "wrote",
+          "author:A5014682058 \u2192 W2029118765"
+        ],
+        [
+          "wrote",
+          "author:A5103731322 \u2192 W2029118765"
+        ],
+        [
+          "wrote",
+          "author:A5043094101 \u2192 W2029118765"
+        ],
+        [
+          "shares_concept",
+          "concept:question-answering-system \u2192 W2029118765"
+        ],
+        [
+          "shares_concept",
+          "concept:answering-system \u2192 W2029118765"
+        ]
+      ],
+      "necessity": 0.04259634888438134,
+      "verdict": {
+        "ok": false,
+        "from": 7,
+        "to": 28,
+        "control": 5.87,
+        "note": "This paper moved, but no more than removing unrelated links would.",
+        "necessity": 0.0426,
+        "p_value": 0.129,
+        "cited_edges": [
+          "e4a9d0981c8c0c64e",
+          "e39f9411cc2d0e668",
+          "ea07b1353a88e3ba1",
+          "ef98e190e3963155f",
+          "e3ec069ebf43a282d",
+          "ec9dd92b78baf27e2",
+          "ed826cd4041ba5e47",
+          "efb38607d06a21a1d",
+          "e18bc3fa575669e5b",
+          "e8cf4cc04a94e1411",
+          "efca0b6eeb0dd0cc0",
+          "e6c3e0d7c3565c492",
+          "e1a674521aac539e0"
+        ]
+      }
+    },
+    {
+      "id": "W2788448041",
+      "tier": 1,
+      "row": 2,
+      "kind": "candidate",
+      "title": "R 3 : Reinforced Ranker-Reader for Open-Domain Question Answering.",
+      "year": 2018,
+      "cites": 230,
+      "abstract": "",
+      "reqs": [
+        [
+          "W2086511124",
+          "2018 paper cites 1999 paper"
+        ],
+        [
+          "W2962985038",
+          "2018 paper cites 2017 paper"
+        ]
+      ],
+      "why": [
+        [
+          "cites",
+          "W3015883388 \u2192 W2788448041"
+        ],
+        [
+          "cites",
+          "W2799081691 \u2192 W2788448041"
+        ],
+        [
+          "wrote",
+          "author:A5051951021 \u2192 W2788448041"
+        ],
+        [
+          "wrote",
+          "author:A5100430087 \u2192 W2788448041"
+        ],
+        [
+          "wrote",
+          "author:A5074288533 \u2192 W2788448041"
+        ],
+        [
+          "wrote",
+          "author:A5034826937 \u2192 W2788448041"
+        ]
+      ],
+      "necessity": 0.06790123456790123,
+      "verdict": {
+        "ok": true,
+        "from": 14,
+        "to": 47,
+        "control": 3.7,
+        "note": "Removing the stated reason pushed this paper down the ranking.",
+        "necessity": 0.0679,
+        "p_value": 0.0323,
+        "cited_edges": [
+          "eaffac708057885aa",
+          "e39f9411cc2d0e668",
+          "e78d868ef12cfd28f",
+          "ea16dad543efb5e2c",
+          "ea4008bfa0359d39d",
+          "ec9dd92b78baf27e2",
+          "e813ba2390e538807",
+          "efb38607d06a21a1d",
+          "e22559388aa588479",
+          "e8cf4cc04a94e1411",
+          "e2936940d69cac5d9",
+          "e6c3e0d7c3565c492",
+          "e50102bc16ee32941"
+        ]
+      }
+    },
+    {
+      "id": "W2799081691",
+      "tier": 1,
+      "row": 3,
+      "kind": "candidate",
+      "title": "Denoising Distantly Supervised Open-Domain Question Answering",
+      "year": 2018,
+      "cites": 158,
+      "abstract": "Distantly supervised open-domain question answering (DS-QA) aims to find answers in collections of unlabeled text. Existing DS-QA models usually retrieve related paragraphs from a large-scale corpus and apply reading comprehension technique to extract answers from the most relevant paragraph. They ignore the rich information contained in other paragraphs. Moreover, distant supervision data inevitably accompanies with the wrong labeling problem, and these noisy data will substantially degrade the performance of DS-QA. To address these issues, we propose a novel DS-QA model which employs a paragraph selector to filter out those noisy paragraphs and a paragraph reader to extract the correct answer from those denoised paragraphs. Experimental results on real-world datasets show that our model can capture useful information from noisy data and achieve significant improvements on DS-QA as compared to all baselines.",
+      "reqs": [
+        [
+          "W2086511124",
+          "2018 paper cites 1999 paper"
+        ],
+        [
+          "W2962985038",
+          "canonical for 'Topic Modeling' (1443 vs 158 citations)"
+        ]
+      ],
+      "why": [
+        [
+          "cites",
+          "W3015883388 \u2192 W2799081691"
+        ],
+        [
+          "cited_by",
+          "W2104009457 \u2192 W2799081691"
+        ],
+        [
+          "wrote",
+          "author:A5020700222 \u2192 W2799081691"
+        ],
+        [
+          "wrote",
+          "author:A5043098453 \u2192 W2799081691"
+        ],
+        [
+          "cites",
+          "W2938205538 \u2192 W2799081691"
+        ],
+        [
+          "cites",
+          "W3015883388 \u2192 W2104009457"
+        ]
+      ],
+      "necessity": 0.04897959183673469,
+      "verdict": {
+        "ok": true,
+        "from": 10,
+        "to": 34,
+        "control": 6.1,
+        "note": "Removing the stated reason pushed this paper down the ranking.",
+        "necessity": 0.049,
+        "p_value": 0.0323,
+        "cited_edges": [
+          "ef60bbd1f0df207c1",
+          "e39f9411cc2d0e668",
+          "ee5bce9bef1ab3345",
+          "ec1bd2945415dc0f1",
+          "e3849099e536588b4",
+          "ea16dad543efb5e2c",
+          "e7af7c2cbc1a8583c",
+          "eaffac708057885aa",
+          "e07630427588f7a3b",
+          "ef98e190e3963155f",
+          "e8d961ba26fd97788",
+          "ec9dd92b78baf27e2",
+          "eddc69270ff557197",
+          "efb38607d06a21a1d",
+          "e439dce5401a69471",
+          "e8cf4cc04a94e1411",
+          "e06ca78f3c144c163",
+          "e6c3e0d7c3565c492",
+          "ee22460dba8c1320d"
+        ]
+      }
+    },
+    {
+      "id": "W2912817604",
+      "tier": 2,
+      "row": 0,
+      "kind": "candidate",
+      "title": "End-to-End Open-Domain Question Answering with",
+      "year": 2019,
+      "cites": 369,
+      "abstract": "Wei Yang, Yuqing Xie, Aileen Lin, Xingyu Li, Luchen Tan, Kun Xiong, Ming Li, Jimmy Lin. Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics (Demonstrations). 2019.",
+      "reqs": [
+        [
+          "W2912924812",
+          "canonical for 'Topic Modeling' (2061 vs 369 citations)"
+        ]
+      ],
+      "why": [
+        [
+          "cites",
+          "W3015883388 \u2192 W2912817604"
+        ],
+        [
+          "cites",
+          "W2938205538 \u2192 W2912817604"
+        ],
+        [
+          "cites",
+          "W3015883388 \u2192 W2938205538"
+        ],
+        [
+          "wrote",
+          "author:A5100328575 \u2192 W2912817604"
+        ],
+        [
+          "wrote",
+          "author:A5005562295 \u2192 W2912817604"
+        ],
+        [
+          "wrote",
+          "author:A5023824766 \u2192 W2912817604"
+        ]
+      ],
+      "necessity": 0.04032258064516129,
+      "verdict": {
+        "ok": true,
+        "from": 4,
+        "to": 24,
+        "control": 3.37,
+        "note": "Removing the stated reason pushed this paper down the ranking.",
+        "necessity": 0.0403,
+        "p_value": 0.0323,
+        "cited_edges": [
+          "e0e56387fac595825",
+          "e822e6237aa856215",
+          "eba44ac3ed536427f",
+          "ef98e190e3963155f",
+          "ebc93b02ee1e875f2",
+          "ec9dd92b78baf27e2",
+          "ed4bd23520392f894",
+          "efb38607d06a21a1d",
+          "e5a8b3894357e03c5",
+          "e8cf4cc04a94e1411",
+          "e0e79ced3650cd65d",
+          "e6c3e0d7c3565c492",
+          "e5b18cf82abc243cb"
+        ]
+      }
+    },
+    {
+      "id": "W2909544278",
+      "tier": 2,
+      "row": 1,
+      "kind": "candidate",
+      "title": "Passage Re-ranking with BERT",
+      "year": 2019,
+      "cites": 346,
+      "abstract": "Recently, neural models pretrained on a language modeling task, such as ELMo (Peters et al., 2017), OpenAI GPT (Radford et al., 2018), and BERT (Devlin et al., 2018), have achieved impressive results on various natural language processing tasks such as question-answering and natural language inference. In this paper, we describe a simple re-implementation of BERT for query-based passage re-ranking. Our system is the state of the art on the TREC-CAR dataset and the top entry in the leaderboard of the MS MARCO passage retrieval task, outperforming the previous state of the art by 27% (relative) in MRR@10. The code to reproduce our results is available at https://github.com/nyu-dl/dl4marco-bert",
+      "reqs": [
+        [
+          "W2912924812",
+          "canonical for 'Topic Modeling' (2061 vs 346 citations)"
+        ]
+      ],
+      "why": [
+        [
+          "cites",
+          "W3015883388 \u2192 W2909544278"
+        ],
+        [
+          "cites",
+          "W3037128914 \u2192 W2909544278"
+        ],
+        [
+          "cites",
+          "W3094336525 \u2192 W2909544278"
+        ],
+        [
+          "cites",
+          "W2912817604 \u2192 W2909544278"
+        ],
+        [
+          "cited_by",
+          "W3015883388 \u2192 W3094336525"
+        ],
+        [
+          "cited_by",
+          "W3015883388 \u2192 W3037128914"
+        ]
+      ],
+      "necessity": 0.03441295546558704,
+      "verdict": {
+        "ok": false,
+        "from": 6,
+        "to": 23,
+        "control": 1.07,
+        "note": "This paper moved, but no more than removing unrelated links would.",
+        "necessity": 0.0344,
+        "p_value": 0.0645,
+        "cited_edges": [
+          "e822e6237aa856215",
+          "e653dba6eb7214303",
+          "ecee844c524072174",
+          "e2325f60c6c5ad193",
+          "e614e4bd755ff651b",
+          "ef98e190e3963155f",
+          "e6454e1d380f540a4",
+          "e6c3e0d7c3565c492",
+          "e88f69bc0b4531ecf"
+        ]
+      }
+    },
+    {
+      "id": "W3206455169",
+      "tier": 3,
+      "row": 0,
+      "kind": "candidate",
+      "title": "RocketQAv2: A Joint Training Method for Dense Passage Retrieval and Passage Re-ranking",
+      "year": 2021,
+      "cites": 151,
+      "abstract": "In various natural language processing tasks, passage retrieval and passage re-ranking are two key procedures in finding and ranking relevant information. Since both the two procedures contribute to the final performance, it is important to jointly optimize them in order to achieve mutual improvement. In this paper, we propose a novel joint training approach for dense passage retrieval and passage reranking. A major contribution is that we introduce the dynamic listwise distillation, where we design a unified listwise training approach for both the retriever and the re-ranker. During the dynamic distillation, the retriever and the re-ranker can be adaptively improved according to each other's relevance information. We also propose a hybrid data augmentation strategy to construct diverse training instances for listwise training approach. Extensive experiments show the effectiveness of our approach on both MSMARCO and Natural Questions datasets.",
+      "reqs": [
+        [
+          "W2909544278",
+          "2021 paper cites 2019 paper"
+        ]
+      ],
+      "why": [
+        [
+          "shares_concept",
+          "concept:dense-passage-retrieval \u2192 W3206455169"
+        ],
+        [
+          "shares_concept",
+          "concept:dense-passage \u2192 W3206455169"
+        ],
+        [
+          "shares_concept",
+          "W3015883388 \u2192 concept:dense-passage-retrieval"
+        ],
+        [
+          "shares_concept",
+          "W3015883388 \u2192 concept:dense-passage"
+        ],
+        [
+          "shares_concept",
+          "concept:passage-retrieval \u2192 W3206455169"
+        ],
+        [
+          "shares_concept",
+          "W3015883388 \u2192 concept:passage-retrieval"
+        ]
+      ],
+      "necessity": 0.02663934426229508,
+      "verdict": {
+        "ok": true,
+        "from": 12,
+        "to": 25,
+        "control": 0.57,
+        "note": "Removing the stated reason pushed this paper down the ranking.",
+        "necessity": 0.0266,
+        "p_value": 0.0323,
+        "cited_edges": [
+          "e457d1263c3fd8c13",
+          "ec80d0c1ece1f911b",
+          "e822e6237aa856215",
+          "e277621ff8ab111ac",
+          "ea6b2ae0aa33a7e0e",
+          "eb99e36ce020608f2",
+          "e89b38b820de5ae60",
+          "e9f520574b0809d6a",
+          "eaa7c150c279bb36c",
+          "ea4a92d7e24cdfbb4",
+          "ef98e190e3963155f",
+          "ee9041d91eeb73cf5",
+          "eca8374029d6b7e97",
+          "eb88dd6c3f5c2d949",
+          "e6c3e0d7c3565c492",
+          "ea04b2164a3f89f72"
+        ]
+      }
+    },
+    {
+      "id": "W3039017601",
+      "tier": 3,
+      "row": 1,
+      "kind": "candidate",
+      "title": "Leveraging Passage Retrieval with Generative Models for Open Domain Question Answering",
+      "year": 2021,
+      "cites": 99,
+      "abstract": "Generative models for open domain question answering have proven to be competitive, without resorting to external knowledge. While promising, this approach requires to use models with billions of parameters, which are expensive to train and query. In this paper, we investigate how much these models can benefit from retrieving text passages, potentially containing evidence. We obtain state-of-theart results on the Natural Questions and Triv-iaQA open benchmarks. Interestingly, we observe that the performance of this method significantly improves when increasing the number of retrieved passages. This is evidence that sequence-to-sequence models offers a flexible framework to efficiently aggregate and combine evidence from multiple passages.",
+      "reqs": [
+        [
+          "W2788448041",
+          "2021 paper cites 2018 paper"
+        ],
+        [
+          "W2909544278",
+          "canonical for 'Topic Modeling' (346 vs 99 citations)"
+        ],
+        [
+          "W2912817604",
+          "2021 paper cites 2019 paper"
+        ]
+      ],
+      "why": [
+        [
+          "shares_concept",
+          "concept:passage-retrieval \u2192 W3039017601"
+        ],
+        [
+          "shares_concept",
+          "W3015883388 \u2192 concept:passage-retrieval"
+        ],
+        [
+          "cited_by",
+          "W2788448041 \u2192 W3039017601"
+        ],
+        [
+          "cited_by",
+          "W3015883388 \u2192 W3118027562"
+        ],
+        [
+          "cites",
+          "W3118027562 \u2192 W3039017601"
+        ],
+        [
+          "cited_by",
+          "W2912817604 \u2192 W3039017601"
+        ]
+      ],
+      "necessity": 0.02044989775051125,
+      "verdict": {
+        "ok": true,
+        "from": 11,
+        "to": 21,
+        "control": 0.33,
+        "note": "Removing the stated reason pushed this paper down the ranking.",
+        "necessity": 0.0204,
+        "p_value": 0.0323,
+        "cited_edges": [
+          "e39f9411cc2d0e668",
+          "e3112a8387dcda153",
+          "eaffac708057885aa",
+          "e94405d7cd03db846",
+          "e0e56387fac595825",
+          "e6df893aa229e0b95",
+          "ea6b2ae0aa33a7e0e",
+          "ed7447964f33c3228",
+          "eb2b5be92f3d4abab",
+          "e214720b43d911c33",
+          "ef98e190e3963155f",
+          "e7f0d33edd7495e31",
+          "ec9dd92b78baf27e2",
+          "ed25f4dbc8b81d3ff",
+          "eca8374029d6b7e97",
+          "e5183ce92e688d055",
+          "e8cf4cc04a94e1411",
+          "ecd7a7d34ffb476ea",
+          "e6c3e0d7c3565c492",
+          "e58277c1db0e76ce5"
+        ]
+      }
+    },
+    {
+      "id": "W2938205538",
+      "tier": 3,
+      "row": 2,
+      "kind": "candidate",
+      "title": "Data Augmentation for BERT Fine-Tuning in Open-Domain Question Answering",
+      "year": 2019,
+      "cites": 37,
+      "abstract": "Recently, a simple combination of passage retrieval using off-the-shelf IR techniques and a BERT reader was found to be very effective for question answering directly on Wikipedia, yielding a large improvement over the previous state of the art on a standard benchmark dataset. In this paper, we present a data augmentation technique using distant supervision that exploits positive as well as negative examples. We apply a stage-wise approach to fine tuning BERT on multiple datasets, starting with data that is \"furthest\" from the test data and ending with the \"closest\". Experimental results show large gains in effectiveness over previous approaches on English QA datasets, and we establish new baselines on two recent Chinese QA datasets.",
+      "reqs": [
+        [
+          "W2029118765",
+          "canonical for 'Topic Modeling' (235 vs 37 citations)"
+        ],
+        [
+          "W2788448041",
+          "canonical for 'Topic Modeling' (230 vs 37 citations)"
+        ],
+        [
+          "W2799081691",
+          "2019 paper cites 2018 paper"
+        ],
+        [
+          "W2909544278",
+          "canonical for 'Topic Modeling' (346 vs 37 citations)"
+        ],
+        [
+          "W2912817604",
+          "canonical for 'Topic Modeling' (369 vs 37 citations)"
+        ]
+      ],
+      "why": [
+        [
+          "cites",
+          "W3015883388 \u2192 W2938205538"
+        ],
+        [
+          "cited_by",
+          "W2799081691 \u2192 W2938205538"
+        ],
+        [
+          "cited_by",
+          "W2912817604 \u2192 W2938205538"
+        ],
+        [
+          "wrote",
+          "author:A5023824766 \u2192 W2938205538"
+        ],
+        [
+          "wrote",
+          "author:A5100351449 \u2192 W2938205538"
+        ],
+        [
+          "cites",
+          "W3015883388 \u2192 W2912817604"
+        ]
+      ],
+      "necessity": 0.044715447154471545,
+      "verdict": {
+        "ok": true,
+        "from": 8,
+        "to": 30,
+        "control": 4.97,
+        "note": "Removing the stated reason pushed this paper down the ranking.",
+        "necessity": 0.0447,
+        "p_value": 0.0323,
+        "cited_edges": [
+          "e75774ff1b87ed38e",
+          "ef60bbd1f0df207c1",
+          "e5d7b1d110801c20d",
+          "e0e56387fac595825",
+          "e645968ad895e9847",
+          "ef98e190e3963155f",
+          "e95600e7d288e22f8",
+          "ec9dd92b78baf27e2",
+          "ecf6e765e1d4a6fa6",
+          "efb38607d06a21a1d",
+          "ead65f29eccb665dc",
+          "e8cf4cc04a94e1411",
+          "e717b3b48d4ab6d97",
+          "e6c3e0d7c3565c492",
+          "e33b443cc265b7054"
+        ]
+      }
+    },
+    {
+      "id": "W3015883388",
+      "tier": 4,
+      "row": 0,
+      "kind": "seed",
+      "title": "Dense Passage Retrieval for Open-Domain Question Answering",
+      "year": 2020,
+      "cites": 142,
+      "abstract": "Vladimir Karpukhin, Barlas Oguz, Sewon Min, Patrick Lewis, Ledell Wu, Sergey Edunov, Danqi Chen, Wen-tau Yih. Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP). 2020.",
+      "reqs": [
+        [
+          "W2938205538",
+          "2020 paper cites 2019 paper"
+        ]
+      ],
+      "why": [],
+      "necessity": 0.0,
+      "verdict": null
+    },
+    {
+      "id": "W3087273879",
+      "tier": 5,
+      "row": 0,
+      "kind": "candidate",
+      "title": "Generation-Augmented Retrieval for Open-domain Question Answering",
+      "year": 2020,
+      "cites": 33,
+      "abstract": "We propose Generation-Augmented Retrieval (GAR) for answering open-domain questions, which augments a query through text generation of heuristically discovered relevant contexts without external resources as supervision. We demonstrate that the generated contexts substantially enrich the semantics of the queries and GAR with sparse representations (BM25) achieves comparable or better performance than state-of-the-art dense retrieval methods such as DPR. We show that generating diverse contexts for a query is beneficial as fusing their results consistently yields better retrieval accuracy. Moreover, as sparse and dense representations are often complementary, GAR can be easily combined with DPR to achieve even better performance. GAR achieves state-of-the-art performance on Natural Questions and TriviaQA datasets under the extractive QA setup when equipped with an extractive reader, and consistently outperforms other retrieval methods when the same generative reader is used.",
+      "reqs": [
+        [
+          "W3015883388",
+          "canonical for 'Topic Modeling' (142 vs 33 citations)"
+        ]
+      ],
+      "why": [
+        [
+          "cited_by",
+          "W3015883388 \u2192 W3087273879"
+        ],
+        [
+          "wrote",
+          "author:A5012370787 \u2192 W3087273879"
+        ],
+        [
+          "wrote",
+          "author:A5019539533 \u2192 W3087273879"
+        ],
+        [
+          "shares_concept",
+          "concept:open-domain-question-answering \u2192 W3087273879"
+        ],
+        [
+          "shares_concept",
+          "concept:open-domain-question \u2192 W3087273879"
+        ],
+        [
+          "wrote",
+          "author:A5100374771 \u2192 W3087273879"
+        ]
+      ],
+      "necessity": 0.04627766599597585,
+      "verdict": {
+        "ok": true,
+        "from": 3,
+        "to": 26,
+        "control": 5.43,
+        "note": "Removing the stated reason pushed this paper down the ranking.",
+        "necessity": 0.0463,
+        "p_value": 0.0323,
+        "cited_edges": [
+          "e52044864422e0b83",
+          "e8b693f7f9baed1da",
+          "e5678db2760532cf6",
+          "ed0fd9fe133286de9",
+          "e1116099c4bb2b1af",
+          "ea6b2ae0aa33a7e0e",
+          "e56d5645e8e348e63",
+          "ef98e190e3963155f",
+          "e251dec36f8383587",
+          "ec9dd92b78baf27e2",
+          "e959ddb3df0fda9db",
+          "efb38607d06a21a1d",
+          "e4cf3a4cf550c6fb3",
+          "e8cf4cc04a94e1411",
+          "e8b845571e6a62551",
+          "e6c3e0d7c3565c492",
+          "ea7d8ae7e203dff20"
+        ]
+      }
+    },
+    {
+      "id": "W3118027562",
+      "tier": 5,
+      "row": 1,
+      "kind": "candidate",
+      "title": "A Memory Efficient Baseline for Open Domain Question Answering",
+      "year": 2020,
+      "cites": 29,
+      "abstract": "Recently, retrieval systems based on dense representations have led to important improvements in open-domain question answering, and related tasks. While very effective, this approach is also memory intensive, as the dense vectors for the whole knowledge source need to be kept in memory. In this paper, we study how the memory footprint of dense retriever-reader systems can be reduced. We consider three strategies to reduce the index size: dimension reduction, vector quantization and passage filtering. We evaluate our approach on two question answering benchmarks: TriviaQA and NaturalQuestions, showing that it is possible to get competitive systems using less than 6Gb of memory.",
+      "reqs": [
+        [
+          "W3015883388",
+          "canonical for 'Topic Modeling' (142 vs 29 citations)"
+        ]
+      ],
+      "why": [
+        [
+          "cited_by",
+          "W3015883388 \u2192 W3118027562"
+        ],
+        [
+          "wrote",
+          "author:A5075219217 \u2192 W3118027562"
+        ],
+        [
+          "wrote",
+          "author:A5104185603 \u2192 W3118027562"
+        ],
+        [
+          "cited_by",
+          "W2086511124 \u2192 W3118027562"
+        ],
+        [
+          "shares_concept",
+          "concept:open-domain-question \u2192 W3118027562"
+        ],
+        [
+          "cited_by",
+          "W3039017601 \u2192 W3118027562"
+        ]
+      ],
+      "necessity": 0.026052104208416832,
+      "verdict": {
+        "ok": true,
+        "from": 1,
+        "to": 14,
+        "control": 1.47,
+        "note": "Removing the stated reason pushed this paper down the ranking.",
+        "necessity": 0.0261,
+        "p_value": 0.0323,
+        "cited_edges": [
+          "eb2b5be92f3d4abab",
+          "e39f9411cc2d0e668",
+          "e74ce9218955b1354",
+          "ea6b2ae0aa33a7e0e",
+          "efd5c554fe981d734",
+          "ec9dd92b78baf27e2",
+          "e76e6a9924637a195",
+          "e8cf4cc04a94e1411",
+          "e00bbe92db8a6332d",
+          "e6c3e0d7c3565c492",
+          "e814da2edbf50a4ad"
+        ]
+      }
+    },
+    {
+      "id": "W3094336525",
+      "tier": 5,
+      "row": 2,
+      "kind": "candidate",
+      "title": "Neural Passage Retrieval with Improved Negative Contrast",
+      "year": 2020,
+      "cites": 21,
+      "abstract": "In this paper we explore the effects of negative sampling in dual encoder models used to retrieve passages for automatic question answering. We explore four negative sampling strategies that complement the straightforward random sampling of negatives, typically used to train dual encoder models. Out of the four strategies, three are based on retrieval and one on heuristics. Our retrieval-based strategies are based on the semantic similarity and the lexical overlap between questions and passages. We train the dual encoder models in two stages: pre-training with synthetic data and fine tuning with domain-specific data. We apply negative sampling to both stages. The approach is evaluated in two passage retrieval tasks. Even though it is not evident that there is one single sampling strategy that works best in all the tasks, it is clear that our strategies contribute to improving the contrast between the response and all the other passages. Furthermore, mixing the negatives from different strategies achieve performance on par with the best performing strategy in all tasks. Our results establish a new state-of-the-art level of performance on two of the open-domain question answering datasets that we evaluated.",
+      "reqs": [
+        [
+          "W3015883388",
+          "canonical for 'Topic Modeling' (142 vs 21 citations)"
+        ]
+      ],
+      "why": [
+        [
+          "cited_by",
+          "W3015883388 \u2192 W3094336525"
+        ],
+        [
+          "wrote",
+          "author:A5102854997 \u2192 W3094336525"
+        ],
+        [
+          "wrote",
+          "author:A5110070060 \u2192 W3094336525"
+        ],
+        [
+          "cited_by",
+          "W2611029872 \u2192 W3094336525"
+        ],
+        [
+          "wrote",
+          "author:A5013110024 \u2192 W3094336525"
+        ],
+        [
+          "wrote",
+          "author:A5112593580 \u2192 W3094336525"
+        ]
+      ],
+      "necessity": 0.039014373716632446,
+      "verdict": {
+        "ok": true,
+        "from": 13,
+        "to": 32,
+        "control": 3.03,
+        "note": "Removing the stated reason pushed this paper down the ranking.",
+        "necessity": 0.039,
+        "p_value": 0.0323,
+        "cited_edges": [
+          "e2325f60c6c5ad193",
+          "ed0fd9fe133286de9",
+          "ecf5aff7d1f45b59f",
+          "e457d1263c3fd8c13",
+          "eb6e3e9bbbd95f0e6",
+          "e822e6237aa856215",
+          "e614e4bd755ff651b",
+          "ea6b2ae0aa33a7e0e",
+          "e02d52fd8e17e4d7f",
+          "ef98e190e3963155f",
+          "e89eacc8c84171f37",
+          "e6c3e0d7c3565c492",
+          "e050bf8cca747ccac"
+        ]
+      }
+    }
+  ],
+  "neighbourhood": {
+    "nodes": [
+      {
+        "id": "W3015883388",
+        "kind": "paper",
+        "label": "Dense Passage Retrieval for Open-Domain Question Answering",
+        "cites": 142
+      },
+      {
+        "id": "W2788448041",
+        "kind": "paper",
+        "label": "R 3 : Reinforced Ranker-Reader for Open-Domain Question Answering.",
+        "cites": 230
+      },
+      {
+        "id": "W2799081691",
+        "kind": "paper",
+        "label": "Denoising Distantly Supervised Open-Domain Question Answering",
+        "cites": 158
+      },
+      {
+        "id": "W3087273879",
+        "kind": "paper",
+        "label": "Generation-Augmented Retrieval for Open-domain Question Answering",
+        "cites": 33
+      },
+      {
+        "id": "W2938205538",
+        "kind": "paper",
+        "label": "Data Augmentation for BERT Fine-Tuning in Open-Domain Question Answering",
+        "cites": 37
+      },
+      {
+        "id": "W2029118765",
+        "kind": "paper",
+        "label": "Performance issues and error analysis in an open-domain question answering system",
+        "cites": 235
+      },
+      {
+        "id": "W2912924812",
+        "kind": "paper",
+        "label": "Natural Questions: A Benchmark for Question Answering Research",
+        "cites": 2061
+      },
+      {
+        "id": "W2912817604",
+        "kind": "paper",
+        "label": "End-to-End Open-Domain Question Answering with",
+        "cites": 369
+      },
+      {
+        "id": "W3094336525",
+        "kind": "paper",
+        "label": "Neural Passage Retrieval with Improved Negative Contrast",
+        "cites": 21
+      },
+      {
+        "id": "W2086511124",
+        "kind": "paper",
+        "label": "The TREC-8 Question Answering Track Report",
+        "cites": 859
+      },
+      {
+        "id": "W2909544278",
+        "kind": "paper",
+        "label": "Passage Re-ranking with BERT",
+        "cites": 346
+      },
+      {
+        "id": "W3206455169",
+        "kind": "paper",
+        "label": "RocketQAv2: A Joint Training Method for Dense Passage Retrieval and Passage Re-ranking",
+        "cites": 151
+      },
+      {
+        "id": "W3118027562",
+        "kind": "paper",
+        "label": "A Memory Efficient Baseline for Open Domain Question Answering",
+        "cites": 29
+      },
+      {
+        "id": "W3039017601",
+        "kind": "paper",
+        "label": "Leveraging Passage Retrieval with Generative Models for Open Domain Question Answering",
+        "cites": 99
+      },
+      {
+        "id": "W2962985038",
+        "kind": "paper",
+        "label": "Reading Wikipedia to Answer Open-Domain Questions",
+        "cites": 1443
+      },
+      {
+        "id": "author:A5007815326",
+        "kind": "author",
+        "label": "Gautier Izacard",
+        "degree": 2
+      },
+      {
+        "id": "author:A5019841406",
+        "kind": "author",
+        "label": "Yuqing Xie",
+        "degree": 2
+      },
+      {
+        "id": "author:A5023824766",
+        "kind": "author",
+        "label": "Kun Xiong",
+        "degree": 2
+      },
+      {
+        "id": "author:A5043679408",
+        "kind": "author",
+        "label": "Luchen Tan",
+        "degree": 2
+      },
+      {
+        "id": "author:A5051064208",
+        "kind": "author",
+        "label": "Danqi Chen",
+        "degree": 2
+      },
+      {
+        "id": "author:A5069316249",
+        "kind": "author",
+        "label": "\u00c9douard Grave",
+        "degree": 2
+      },
+      {
+        "id": "author:A5082997975",
+        "kind": "author",
+        "label": "Jimmy Lin",
+        "degree": 2
+      },
+      {
+        "id": "author:A5100351449",
+        "kind": "author",
+        "label": "Ming Li",
+        "degree": 2
+      },
+      {
+        "id": "author:A5101866601",
+        "kind": "author",
+        "label": "Wei Yang",
+        "degree": 2
+      },
+      {
+        "id": "concept:answering",
+        "kind": "concept",
+        "label": "answering",
+        "degree": 2
+      },
+      {
+        "id": "concept:bert",
+        "kind": "concept",
+        "label": "bert",
+        "degree": 2
+      },
+      {
+        "id": "concept:dense-passage",
+        "kind": "concept",
+        "label": "dense passage",
+        "degree": 2
+      },
+      {
+        "id": "concept:dense-passage-retrieval",
+        "kind": "concept",
+        "label": "dense passage retrieval",
+        "degree": 2
+      },
+      {
+        "id": "concept:domain-adaptation-and-few-shot-learning",
+        "kind": "concept",
+        "label": "Domain Adaptation and Few-Shot Learning",
+        "degree": 2
+      },
+      {
+        "id": "concept:domain-question",
+        "kind": "concept",
+        "label": "domain question",
+        "degree": 2
+      },
+      {
+        "id": "concept:domain-question-answering",
+        "kind": "concept",
+        "label": "domain question answering",
+        "degree": 2
+      },
+      {
+        "id": "concept:multimodal-machine-learning-applications",
+        "kind": "concept",
+        "label": "Multimodal Machine Learning Applications",
+        "degree": 10
+      },
+      {
+        "id": "concept:natural-language-processing-techniques",
+        "kind": "concept",
+        "label": "Natural Language Processing Techniques",
+        "degree": 12
+      },
+      {
+        "id": "concept:open-domain",
+        "kind": "concept",
+        "label": "open domain",
+        "degree": 2
+      },
+      {
+        "id": "concept:open-domain-question",
+        "kind": "concept",
+        "label": "open-domain question",
+        "degree": 10
+      },
+      {
+        "id": "concept:open-domain-question-answering",
+        "kind": "concept",
+        "label": "open-domain question answering",
+        "degree": 8
+      },
+      {
+        "id": "concept:open-domain-questions",
+        "kind": "concept",
+        "label": "open-domain questions",
+        "degree": 2
+      },
+      {
+        "id": "concept:passage-re-ranking",
+        "kind": "concept",
+        "label": "passage re-ranking",
+        "degree": 2
+      },
+      {
+        "id": "concept:passage-retrieval",
+        "kind": "concept",
+        "label": "passage retrieval",
+        "degree": 3
+      },
+      {
+        "id": "concept:question-answering",
+        "kind": "concept",
+        "label": "question answering",
+        "degree": 11
+      },
+      {
+        "id": "concept:question-answering-systems",
+        "kind": "concept",
+        "label": "question answering systems",
+        "degree": 2
+      },
+      {
+        "id": "concept:text-and-document-classification-technologies",
+        "kind": "concept",
+        "label": "Text and Document Classification Technologies",
+        "degree": 2
+      },
+      {
+        "id": "concept:topic-modeling",
+        "kind": "concept",
+        "label": "Topic Modeling",
+        "degree": 14
+      },
+      {
+        "id": "venue:arxiv-cornell-university",
+        "kind": "venue",
+        "label": "arXiv (Cornell University)",
+        "degree": 5
+      }
+    ],
+    "edges": [
+      {
+        "edge_id": "e00bbe92db8a6332d",
+        "src": "W3118027562",
+        "rel": "shares_concept",
+        "dst": "concept:question-answering"
+      },
+      {
+        "edge_id": "e02d52fd8e17e4d7f",
+        "src": "W3094336525",
+        "rel": "cites",
+        "dst": "W2912924812"
+      },
+      {
+        "edge_id": "e04fe0eb81cf39845",
+        "src": "W3206455169",
+        "rel": "shares_concept",
+        "dst": "concept:text-and-document-classification-technologies"
+      },
+      {
+        "edge_id": "e050bf8cca747ccac",
+        "src": "W3094336525",
+        "rel": "shares_concept",
+        "dst": "concept:topic-modeling"
+      },
+      {
+        "edge_id": "e0591935c80957a4f",
+        "src": "W2962985038",
+        "rel": "authored_by",
+        "dst": "author:A5051064208"
+      },
+      {
+        "edge_id": "e0672ec8c34886a2b",
+        "src": "W3206455169",
+        "rel": "shares_concept",
+        "dst": "concept:passage-re-ranking"
+      },
+      {
+        "edge_id": "e06ca78f3c144c163",
+        "src": "W2799081691",
+        "rel": "shares_concept",
+        "dst": "concept:question-answering"
+      },
+      {
+        "edge_id": "e07630427588f7a3b",
+        "src": "W2799081691",
+        "rel": "cites",
+        "dst": "W2788448041"
+      },
+      {
+        "edge_id": "e09b97b328534c3e2",
+        "src": "W2912924812",
+        "rel": "cites",
+        "dst": "W2962985038"
+      },
+      {
+        "edge_id": "e0ce67e672981d3b4",
+        "src": "W2938205538",
+        "rel": "authored_by",
+        "dst": "author:A5101866601"
+      },
+      {
+        "edge_id": "e0e56387fac595825",
+        "src": "W3015883388",
+        "rel": "cites",
+        "dst": "W2912817604"
+      },
+      {
+        "edge_id": "e0e79ced3650cd65d",
+        "src": "W2912817604",
+        "rel": "shares_concept",
+        "dst": "concept:question-answering"
+      },
+      {
+        "edge_id": "e10777152a2190cf3",
+        "src": "W2938205538",
+        "rel": "shares_concept",
+        "dst": "concept:bert"
+      },
+      {
+        "edge_id": "e160e935ab485dd98",
+        "src": "W3087273879",
+        "rel": "shares_concept",
+        "dst": "concept:multimodal-machine-learning-applications"
+      },
+      {
+        "edge_id": "e18bc3fa575669e5b",
+        "src": "W2029118765",
+        "rel": "shares_concept",
+        "dst": "concept:open-domain-question-answering"
+      },
+      {
+        "edge_id": "e1a674521aac539e0",
+        "src": "W2029118765",
+        "rel": "shares_concept",
+        "dst": "concept:topic-modeling"
+      },
+      {
+        "edge_id": "e1d42579fe7517bce",
+        "src": "W2938205538",
+        "rel": "shares_concept",
+        "dst": "concept:text-and-document-classification-technologies"
+      },
+      {
+        "edge_id": "e1d867887cf5b59b2",
+        "src": "W2086511124",
+        "rel": "shares_concept",
+        "dst": "concept:answering"
+      },
+      {
+        "edge_id": "e1f73fbc12732680e",
+        "src": "W2909544278",
+        "rel": "shares_concept",
+        "dst": "concept:multimodal-machine-learning-applications"
+      },
+      {
+        "edge_id": "e207d548b3c60a790",
+        "src": "W2912817604",
+        "rel": "authored_by",
+        "dst": "author:A5101866601"
+      },
+      {
+        "edge_id": "e214720b43d911c33",
+        "src": "W3118027562",
+        "rel": "cites",
+        "dst": "W3039017601"
+      },
+      {
+        "edge_id": "e21da8ace68fe9fb5",
+        "src": "W2912924812",
+        "rel": "shares_concept",
+        "dst": "concept:topic-modeling"
+      },
+      {
+        "edge_id": "e22559388aa588479",
+        "src": "W2788448041",
+        "rel": "shares_concept",
+        "dst": "concept:open-domain-question-answering"
+      },
+      {
+        "edge_id": "e2325f60c6c5ad193",
+        "src": "W3094336525",
+        "rel": "cites",
+        "dst": "W3015883388"
+      },
+      {
+        "edge_id": "e251dec36f8383587",
+        "src": "W3087273879",
+        "rel": "shares_concept",
+        "dst": "concept:natural-language-processing-techniques"
+      },
+      {
+        "edge_id": "e277621ff8ab111ac",
+        "src": "W3206455169",
+        "rel": "cites",
+        "dst": "W2909544278"
+      },
+      {
+        "edge_id": "e2936940d69cac5d9",
+        "src": "W2788448041",
+        "rel": "shares_concept",
+        "dst": "concept:question-answering"
+      },
+      {
+        "edge_id": "e3112a8387dcda153",
+        "src": "W3039017601",
+        "rel": "cites",
+        "dst": "W2086511124"
+      },
+      {
+        "edge_id": "e33b443cc265b7054",
+        "src": "W2938205538",
+        "rel": "shares_concept",
+        "dst": "concept:topic-modeling"
+      },
+      {
+        "edge_id": "e37fdd1b76e11433d",
+        "src": "W3118027562",
+        "rel": "shares_concept",
+        "dst": "concept:domain-question"
+      },
+      {
+        "edge_id": "e38dbee63db3d69c0",
+        "src": "W2788448041",
+        "rel": "shares_concept",
+        "dst": "concept:domain-adaptation-and-few-shot-learning"
+      },
+      {
+        "edge_id": "e396ae866363043a5",
+        "src": "W3118027562",
+        "rel": "shares_concept",
+        "dst": "concept:domain-adaptation-and-few-shot-learning"
+      },
+      {
+        "edge_id": "e39f9411cc2d0e668",
+        "src": "W3015883388",
+        "rel": "cites",
+        "dst": "W2086511124"
+      },
+      {
+        "edge_id": "e3b16a019bf643c74",
+        "src": "W3094336525",
+        "rel": "shares_concept",
+        "dst": "concept:multimodal-machine-learning-applications"
+      },
+      {
+        "edge_id": "e3deb0fb2942bc491",
+        "src": "W3087273879",
+        "rel": "shares_concept",
+        "dst": "concept:open-domain-questions"
+      },
+      {
+        "edge_id": "e3ec069ebf43a282d",
+        "src": "W2029118765",
+        "rel": "shares_concept",
+        "dst": "concept:natural-language-processing-techniques"
+      },
+      {
+        "edge_id": "e439dce5401a69471",
+        "src": "W2799081691",
+        "rel": "shares_concept",
+        "dst": "concept:open-domain-question-answering"
+      },
+      {
+        "edge_id": "e45d449e490d93dcb",
+        "src": "W2912924812",
+        "rel": "shares_concept",
+        "dst": "concept:question-answering"
+      },
+      {
+        "edge_id": "e4a9d0981c8c0c64e",
+        "src": "W3015883388",
+        "rel": "cites",
+        "dst": "W2029118765"
+      },
+      {
+        "edge_id": "e4bbbc84b151e9005",
+        "src": "W2912924812",
+        "rel": "shares_concept",
+        "dst": "concept:natural-language-processing-techniques"
+      },
+      {
+        "edge_id": "e4caf3ad17ff21b2a",
+        "src": "W3039017601",
+        "rel": "shares_concept",
+        "dst": "concept:domain-question-answering"
+      },
+      {
+        "edge_id": "e4cf3a4cf550c6fb3",
+        "src": "W3087273879",
+        "rel": "shares_concept",
+        "dst": "concept:open-domain-question-answering"
+      },
+      {
+        "edge_id": "e4e6d445a3f3f7ab8",
+        "src": "W2912817604",
+        "rel": "shares_concept",
+        "dst": "concept:multimodal-machine-learning-applications"
+      },
+      {
+        "edge_id": "e4f34fe7eb4180298",
+        "src": "W3015883388",
+        "rel": "authored_by",
+        "dst": "author:A5051064208"
+      },
+      {
+        "edge_id": "e50102bc16ee32941",
+        "src": "W2788448041",
+        "rel": "shares_concept",
+        "dst": "concept:topic-modeling"
+      },
+      {
+        "edge_id": "e5183ce92e688d055",
+        "src": "W3039017601",
+        "rel": "shares_concept",
+        "dst": "concept:passage-retrieval"
+      },
+      {
+        "edge_id": "e52044864422e0b83",
+        "src": "W3087273879",
+        "rel": "cites",
+        "dst": "W3015883388"
+      },
+      {
+        "edge_id": "e53644bf91436744b",
+        "src": "W2909544278",
+        "rel": "shares_concept",
+        "dst": "concept:bert"
+      },
+      {
+        "edge_id": "e538b78c9ac2b0f01",
+        "src": "W2962985038",
+        "rel": "shares_concept",
+        "dst": "concept:open-domain-question-answering"
+      },
+      {
+        "edge_id": "e56ae6255d5b2d35d",
+        "src": "W2909544278",
+        "rel": "published_in",
+        "dst": "venue:arxiv-cornell-university"
+      },
+      {
+        "edge_id": "e56d5645e8e348e63",
+        "src": "W3087273879",
+        "rel": "cites",
+        "dst": "W2912924812"
+      },
+      {
+        "edge_id": "e58277c1db0e76ce5",
+        "src": "W3039017601",
+        "rel": "shares_concept",
+        "dst": "concept:topic-modeling"
+      },
+      {
+        "edge_id": "e58e5fd2b72c4e878",
+        "src": "W2799081691",
+        "rel": "shares_concept",
+        "dst": "concept:multimodal-machine-learning-applications"
+      },
+      {
+        "edge_id": "e598e3ffb15286399",
+        "src": "W2938205538",
+        "rel": "authored_by",
+        "dst": "author:A5019841406"
+      },
+      {
+        "edge_id": "e5a8b3894357e03c5",
+        "src": "W2912817604",
+        "rel": "shares_concept",
+        "dst": "concept:open-domain-question-answering"
+      },
+      {
+        "edge_id": "e5b18cf82abc243cb",
+        "src": "W2912817604",
+        "rel": "shares_concept",
+        "dst": "concept:topic-modeling"
+      },
+      {
+        "edge_id": "e5d010f51a52dfe4d",
+        "src": "W2788448041",
+        "rel": "shares_concept",
+        "dst": "concept:answering"
+      },
+      {
+        "edge_id": "e5d7b1d110801c20d",
+        "src": "W2938205538",
+        "rel": "cites",
+        "dst": "W2799081691"
+      },
+      {
+        "edge_id": "e5e3b81f935463bab",
+        "src": "W3118027562",
+        "rel": "published_in",
+        "dst": "venue:arxiv-cornell-university"
+      },
+      {
+        "edge_id": "e614e4bd755ff651b",
+        "src": "W3094336525",
+        "rel": "cites",
+        "dst": "W2909544278"
+      },
+      {
+        "edge_id": "e629d5113dc2c6c4e",
+        "src": "W3118027562",
+        "rel": "shares_concept",
+        "dst": "concept:multimodal-machine-learning-applications"
+      },
+      {
+        "edge_id": "e6454e1d380f540a4",
+        "src": "W2909544278",
+        "rel": "shares_concept",
+        "dst": "concept:natural-language-processing-techniques"
+      },
+      {
+        "edge_id": "e645968ad895e9847",
+        "src": "W2938205538",
+        "rel": "cites",
+        "dst": "W2912817604"
+      },
+      {
+        "edge_id": "e6c3e0d7c3565c492",
+        "src": "W3015883388",
+        "rel": "shares_concept",
+        "dst": "concept:topic-modeling"
+      },
+      {
+        "edge_id": "e6df893aa229e0b95",
+        "src": "W3039017601",
+        "rel": "cites",
+        "dst": "W2912817604"
+      },
+      {
+        "edge_id": "e71777595dc3e945f",
+        "src": "W3118027562",
+        "rel": "shares_concept",
+        "dst": "concept:open-domain"
+      },
+      {
+        "edge_id": "e717b3b48d4ab6d97",
+        "src": "W2938205538",
+        "rel": "shares_concept",
+        "dst": "concept:question-answering"
+      },
+      {
+        "edge_id": "e74ce9218955b1354",
+        "src": "W3118027562",
+        "rel": "cites",
+        "dst": "W2086511124"
+      },
+      {
+        "edge_id": "e75774ff1b87ed38e",
+        "src": "W3015883388",
+        "rel": "cites",
+        "dst": "W2938205538"
+      },
+      {
+        "edge_id": "e76e6a9924637a195",
+        "src": "W3118027562",
+        "rel": "shares_concept",
+        "dst": "concept:open-domain-question"
+      },
+      {
+        "edge_id": "e78d868ef12cfd28f",
+        "src": "W2788448041",
+        "rel": "cites",
+        "dst": "W2086511124"
+      },
+      {
+        "edge_id": "e7b27f6aabb71f807",
+        "src": "W3118027562",
+        "rel": "authored_by",
+        "dst": "author:A5069316249"
+      },
+      {
+        "edge_id": "e7b9969d24032257c",
+        "src": "W2938205538",
+        "rel": "authored_by",
+        "dst": "author:A5023824766"
+      },
+      {
+        "edge_id": "e7f0d33edd7495e31",
+        "src": "W3039017601",
+        "rel": "shares_concept",
+        "dst": "concept:natural-language-processing-techniques"
+      },
+      {
+        "edge_id": "e7f2fe729a3acc4d8",
+        "src": "W2962985038",
+        "rel": "shares_concept",
+        "dst": "concept:open-domain-question"
+      },
+      {
+        "edge_id": "e813ba2390e538807",
+        "src": "W2788448041",
+        "rel": "shares_concept",
+        "dst": "concept:open-domain-question"
+      },
+      {
+        "edge_id": "e814da2edbf50a4ad",
+        "src": "W3118027562",
+        "rel": "shares_concept",
+        "dst": "concept:topic-modeling"
+      },
+      {
+        "edge_id": "e822e6237aa856215",
+        "src": "W3015883388",
+        "rel": "cites",
+        "dst": "W2909544278"
+      },
+      {
+        "edge_id": "e88f69bc0b4531ecf",
+        "src": "W2909544278",
+        "rel": "shares_concept",
+        "dst": "concept:topic-modeling"
+      },
+      {
+        "edge_id": "e894e37b23bb4788c",
+        "src": "W3039017601",
+        "rel": "authored_by",
+        "dst": "author:A5069316249"
+      },
+      {
+        "edge_id": "e89b38b820de5ae60",
+        "src": "W3015883388",
+        "rel": "shares_concept",
+        "dst": "concept:dense-passage"
+      },
+      {
+        "edge_id": "e89eacc8c84171f37",
+        "src": "W3094336525",
+        "rel": "shares_concept",
+        "dst": "concept:natural-language-processing-techniques"
+      },
+      {
+        "edge_id": "e8b845571e6a62551",
+        "src": "W3087273879",
+        "rel": "shares_concept",
+        "dst": "concept:question-answering"
+      },
+      {
+        "edge_id": "e8cf4cc04a94e1411",
+        "src": "W3015883388",
+        "rel": "shares_concept",
+        "dst": "concept:question-answering"
+      },
+      {
+        "edge_id": "e8d003cf55ed09c2e",
+        "src": "W2938205538",
+        "rel": "authored_by",
+        "dst": "author:A5082997975"
+      },
+      {
+        "edge_id": "e8d961ba26fd97788",
+        "src": "W2799081691",
+        "rel": "shares_concept",
+        "dst": "concept:natural-language-processing-techniques"
+      },
+      {
+        "edge_id": "e8e538485f170c0f1",
+        "src": "W2962985038",
+        "rel": "shares_concept",
+        "dst": "concept:topic-modeling"
+      },
+      {
+        "edge_id": "e8fedf216eea01e5c",
+        "src": "W3039017601",
+        "rel": "shares_concept",
+        "dst": "concept:domain-question"
+      },
+      {
+        "edge_id": "e90567de3c6839878",
+        "src": "W2912817604",
+        "rel": "cites",
+        "dst": "W2962985038"
+      },
+      {
+        "edge_id": "e94405d7cd03db846",
+        "src": "W3039017601",
+        "rel": "cites",
+        "dst": "W2788448041"
+      },
+      {
+        "edge_id": "e95600e7d288e22f8",
+        "src": "W2938205538",
+        "rel": "shares_concept",
+        "dst": "concept:natural-language-processing-techniques"
+      },
+      {
+        "edge_id": "e959ddb3df0fda9db",
+        "src": "W3087273879",
+        "rel": "shares_concept",
+        "dst": "concept:open-domain-question"
+      },
+      {
+        "edge_id": "e9f520574b0809d6a",
+        "src": "W3206455169",
+        "rel": "shares_concept",
+        "dst": "concept:dense-passage"
+      },
+      {
+        "edge_id": "e9f56a4b952b3ca03",
+        "src": "W2788448041",
+        "rel": "shares_concept",
+        "dst": "concept:multimodal-machine-learning-applications"
+      },
+      {
+        "edge_id": "ea04b2164a3f89f72",
+        "src": "W3206455169",
+        "rel": "shares_concept",
+        "dst": "concept:topic-modeling"
+      },
+      {
+        "edge_id": "ea07b1353a88e3ba1",
+        "src": "W2029118765",
+        "rel": "cites",
+        "dst": "W2086511124"
+      },
+      {
+        "edge_id": "ea2a352df7a4ef1e0",
+        "src": "W2938205538",
+        "rel": "published_in",
+        "dst": "venue:arxiv-cornell-university"
+      },
+      {
+        "edge_id": "ea2c7d594785d2bf1",
+        "src": "W2086511124",
+        "rel": "shares_concept",
+        "dst": "concept:question-answering-systems"
+      },
+      {
+        "edge_id": "ea3470c9dd4aa93b3",
+        "src": "W2912817604",
+        "rel": "authored_by",
+        "dst": "author:A5023824766"
+      },
+      {
+        "edge_id": "ea3b66cb326cdd056",
+        "src": "W2912817604",
+        "rel": "authored_by",
+        "dst": "author:A5019841406"
+      },
+      {
+        "edge_id": "ea4a92d7e24cdfbb4",
+        "src": "W3206455169",
+        "rel": "shares_concept",
+        "dst": "concept:dense-passage-retrieval"
+      },
+      {
+        "edge_id": "ea6b2ae0aa33a7e0e",
+        "src": "W3015883388",
+        "rel": "cites",
+        "dst": "W2912924812"
+      },
+      {
+        "edge_id": "ea7d8ae7e203dff20",
+        "src": "W3087273879",
+        "rel": "shares_concept",
+        "dst": "concept:topic-modeling"
+      },
+      {
+        "edge_id": "eaa7c150c279bb36c",
+        "src": "W3015883388",
+        "rel": "shares_concept",
+        "dst": "concept:dense-passage-retrieval"
+      },
+      {
+        "edge_id": "ead65f29eccb665dc",
+        "src": "W2938205538",
+        "rel": "shares_concept",
+        "dst": "concept:open-domain-question-answering"
+      },
+      {
+        "edge_id": "eaff964ae89346d78",
+        "src": "W2912817604",
+        "rel": "authored_by",
+        "dst": "author:A5100351449"
+      },
+      {
+        "edge_id": "eaffac708057885aa",
+        "src": "W3015883388",
+        "rel": "cites",
+        "dst": "W2788448041"
+      },
+      {
+        "edge_id": "eb2b5be92f3d4abab",
+        "src": "W3118027562",
+        "rel": "cites",
+        "dst": "W3015883388"
+      },
+      {
+        "edge_id": "eb4e0844a65135a4a",
+        "src": "W2788448041",
+        "rel": "cites",
+        "dst": "W2962985038"
+      },
+      {
+        "edge_id": "eb5586f47bc2c5f53",
+        "src": "W3118027562",
+        "rel": "authored_by",
+        "dst": "author:A5007815326"
+      },
+      {
+        "edge_id": "eb7a88ff88ef70351",
+        "src": "W2938205538",
+        "rel": "authored_by",
+        "dst": "author:A5100351449"
+      },
+      {
+        "edge_id": "eb84bd8a388c698de",
+        "src": "W3039017601",
+        "rel": "shares_concept",
+        "dst": "concept:multimodal-machine-learning-applications"
+      },
+      {
+        "edge_id": "eb88dd6c3f5c2d949",
+        "src": "W3206455169",
+        "rel": "shares_concept",
+        "dst": "concept:passage-retrieval"
+      },
+      {
+        "edge_id": "eb99e36ce020608f2",
+        "src": "W3206455169",
+        "rel": "cites",
+        "dst": "W2912924812"
+      },
+      {
+        "edge_id": "eba44ac3ed536427f",
+        "src": "W2912817604",
+        "rel": "cites",
+        "dst": "W2909544278"
+      },
+      {
+        "edge_id": "ebc93b02ee1e875f2",
+        "src": "W2912817604",
+        "rel": "shares_concept",
+        "dst": "concept:natural-language-processing-techniques"
+      },
+      {
+        "edge_id": "ebecb0b8eb466b676",
+        "src": "W2962985038",
+        "rel": "shares_concept",
+        "dst": "concept:multimodal-machine-learning-applications"
+      },
+      {
+        "edge_id": "ebef7013464048034",
+        "src": "W2912817604",
+        "rel": "authored_by",
+        "dst": "author:A5043679408"
+      },
+      {
+        "edge_id": "ebf15c08f24afaac7",
+        "src": "W2909544278",
+        "rel": "shares_concept",
+        "dst": "concept:passage-re-ranking"
+      },
+      {
+        "edge_id": "ec146593b45aff2a0",
+        "src": "W3094336525",
+        "rel": "published_in",
+        "dst": "venue:arxiv-cornell-university"
+      },
+      {
+        "edge_id": "ec2e67ca702eac150",
+        "src": "W3118027562",
+        "rel": "shares_concept",
+        "dst": "concept:domain-question-answering"
+      },
+      {
+        "edge_id": "ec7b9b97677c9a478",
+        "src": "W2962985038",
+        "rel": "shares_concept",
+        "dst": "concept:natural-language-processing-techniques"
+      },
+      {
+        "edge_id": "ec9dd92b78baf27e2",
+        "src": "W3015883388",
+        "rel": "shares_concept",
+        "dst": "concept:open-domain-question"
+      },
+      {
+        "edge_id": "eca8374029d6b7e97",
+        "src": "W3015883388",
+        "rel": "shares_concept",
+        "dst": "concept:passage-retrieval"
+      },
+      {
+        "edge_id": "ecc1e3e76b54eaa9e",
+        "src": "W2912924812",
+        "rel": "shares_concept",
+        "dst": "concept:question-answering-systems"
+      },
+      {
+        "edge_id": "ecc9b6e015d4ddc66",
+        "src": "W2938205538",
+        "rel": "authored_by",
+        "dst": "author:A5043679408"
+      },
+      {
+        "edge_id": "ecd7a7d34ffb476ea",
+        "src": "W3039017601",
+        "rel": "shares_concept",
+        "dst": "concept:question-answering"
+      },
+      {
+        "edge_id": "ecf6e765e1d4a6fa6",
+        "src": "W2938205538",
+        "rel": "shares_concept",
+        "dst": "concept:open-domain-question"
+      },
+      {
+        "edge_id": "ed25f4dbc8b81d3ff",
+        "src": "W3039017601",
+        "rel": "shares_concept",
+        "dst": "concept:open-domain-question"
+      },
+      {
+        "edge_id": "ed2b703a102565031",
+        "src": "W2962985038",
+        "rel": "shares_concept",
+        "dst": "concept:open-domain-questions"
+      },
+      {
+        "edge_id": "ed4bd23520392f894",
+        "src": "W2912817604",
+        "rel": "shares_concept",
+        "dst": "concept:open-domain-question"
+      },
+      {
+        "edge_id": "ed7447964f33c3228",
+        "src": "W3039017601",
+        "rel": "cites",
+        "dst": "W2912924812"
+      },
+      {
+        "edge_id": "ed826cd4041ba5e47",
+        "src": "W2029118765",
+        "rel": "shares_concept",
+        "dst": "concept:open-domain-question"
+      },
+      {
+        "edge_id": "eddc69270ff557197",
+        "src": "W2799081691",
+        "rel": "shares_concept",
+        "dst": "concept:open-domain-question"
+      },
+      {
+        "edge_id": "ee22460dba8c1320d",
+        "src": "W2799081691",
+        "rel": "shares_concept",
+        "dst": "concept:topic-modeling"
+      },
+      {
+        "edge_id": "ee2c34d1e65bcb5c5",
+        "src": "W2912817604",
+        "rel": "authored_by",
+        "dst": "author:A5082997975"
+      },
+      {
+        "edge_id": "ee51ef450995d9955",
+        "src": "W3039017601",
+        "rel": "shares_concept",
+        "dst": "concept:open-domain"
+      },
+      {
+        "edge_id": "ee5bce9bef1ab3345",
+        "src": "W2799081691",
+        "rel": "cites",
+        "dst": "W2086511124"
+      },
+      {
+        "edge_id": "ee9041d91eeb73cf5",
+        "src": "W3206455169",
+        "rel": "shares_concept",
+        "dst": "concept:natural-language-processing-techniques"
+      },
+      {
+        "edge_id": "ee93bec57d62cf1f5",
+        "src": "W3087273879",
+        "rel": "published_in",
+        "dst": "venue:arxiv-cornell-university"
+      },
+      {
+        "edge_id": "ef323a6ea66a1e02c",
+        "src": "W2912924812",
+        "rel": "shares_concept",
+        "dst": "concept:multimodal-machine-learning-applications"
+      },
+      {
+        "edge_id": "ef60bbd1f0df207c1",
+        "src": "W3015883388",
+        "rel": "cites",
+        "dst": "W2799081691"
+      },
+      {
+        "edge_id": "ef98e190e3963155f",
+        "src": "W3015883388",
+        "rel": "shares_concept",
+        "dst": "concept:natural-language-processing-techniques"
+      },
+      {
+        "edge_id": "efb38607d06a21a1d",
+        "src": "W3015883388",
+        "rel": "shares_concept",
+        "dst": "concept:open-domain-question-answering"
+      },
+      {
+        "edge_id": "efca0b6eeb0dd0cc0",
+        "src": "W2029118765",
+        "rel": "shares_concept",
+        "dst": "concept:question-answering"
+      },
+      {
+        "edge_id": "efd5c554fe981d734",
+        "src": "W3118027562",
+        "rel": "cites",
+        "dst": "W2912924812"
+      },
+      {
+        "edge_id": "efedf4fdf5493018a",
+        "src": "W3039017601",
+        "rel": "authored_by",
+        "dst": "author:A5007815326"
+      },
+      {
+        "edge_id": "eff6cc9b7a056ff83",
+        "src": "W2086511124",
+        "rel": "shares_concept",
+        "dst": "concept:question-answering"
+      }
+    ]
+  },
+  "tiers": [
+    "Tier 1 \u00b7 1999\u20132017",
+    "Tier 2 \u00b7 2003\u20132019",
+    "Tier 3 \u00b7 2019",
+    "Tier 4 \u00b7 2019\u20132021",
+    "Tier 5 \u00b7 2020",
+    "Tier 6 \u00b7 2020"
+  ],
+  "prereq_edges": [
+    {
+      "prereq": "W2029118765",
+      "dependent": "W2938205538",
+      "reason": "canonical_for_shared_concept",
+      "weight": 1.0,
+      "detail": "canonical for 'Topic Modeling' (235 vs 37 citations)"
+    },
+    {
+      "prereq": "W2086511124",
+      "dependent": "W2029118765",
+      "reason": "cites_and_predates",
+      "weight": 3.0,
+      "detail": "2003 paper cites 1999 paper"
+    },
+    {
+      "prereq": "W2086511124",
+      "dependent": "W2788448041",
+      "reason": "cites_and_predates",
+      "weight": 3.0,
+      "detail": "2018 paper cites 1999 paper"
+    },
+    {
+      "prereq": "W2086511124",
+      "dependent": "W2799081691",
+      "reason": "cites_and_predates",
+      "weight": 3.0,
+      "detail": "2018 paper cites 1999 paper"
+    },
+    {
+      "prereq": "W2788448041",
+      "dependent": "W2938205538",
+      "reason": "canonical_for_shared_concept",
+      "weight": 1.0,
+      "detail": "canonical for 'Topic Modeling' (230 vs 37 citations)"
+    },
+    {
+      "prereq": "W2788448041",
+      "dependent": "W3039017601",
+      "reason": "cites_and_predates",
+      "weight": 3.0,
+      "detail": "2021 paper cites 2018 paper"
+    },
+    {
+      "prereq": "W2799081691",
+      "dependent": "W2938205538",
+      "reason": "cites_and_predates",
+      "weight": 3.0,
+      "detail": "2019 paper cites 2018 paper"
+    },
+    {
+      "prereq": "W2909544278",
+      "dependent": "W2938205538",
+      "reason": "canonical_for_shared_concept",
+      "weight": 1.0,
+      "detail": "canonical for 'Topic Modeling' (346 vs 37 citations)"
+    },
+    {
+      "prereq": "W2909544278",
+      "dependent": "W3039017601",
+      "reason": "canonical_for_shared_concept",
+      "weight": 1.0,
+      "detail": "canonical for 'Topic Modeling' (346 vs 99 citations)"
+    },
+    {
+      "prereq": "W2909544278",
+      "dependent": "W3206455169",
+      "reason": "cites_and_predates",
+      "weight": 3.0,
+      "detail": "2021 paper cites 2019 paper"
+    },
+    {
+      "prereq": "W2912817604",
+      "dependent": "W2938205538",
+      "reason": "canonical_for_shared_concept",
+      "weight": 1.0,
+      "detail": "canonical for 'Topic Modeling' (369 vs 37 citations)"
+    },
+    {
+      "prereq": "W2912817604",
+      "dependent": "W3039017601",
+      "reason": "cites_and_predates",
+      "weight": 3.0,
+      "detail": "2021 paper cites 2019 paper"
+    },
+    {
+      "prereq": "W2912924812",
+      "dependent": "W2909544278",
+      "reason": "canonical_for_shared_concept",
+      "weight": 1.0,
+      "detail": "canonical for 'Topic Modeling' (2061 vs 346 citations)"
+    },
+    {
+      "prereq": "W2912924812",
+      "dependent": "W2912817604",
+      "reason": "canonical_for_shared_concept",
+      "weight": 1.0,
+      "detail": "canonical for 'Topic Modeling' (2061 vs 369 citations)"
+    },
+    {
+      "prereq": "W2938205538",
+      "dependent": "W3015883388",
+      "reason": "cites_and_predates",
+      "weight": 3.0,
+      "detail": "2020 paper cites 2019 paper"
+    },
+    {
+      "prereq": "W2962985038",
+      "dependent": "W2788448041",
+      "reason": "cites_and_predates",
+      "weight": 3.0,
+      "detail": "2018 paper cites 2017 paper"
+    },
+    {
+      "prereq": "W2962985038",
+      "dependent": "W2799081691",
+      "reason": "canonical_for_shared_concept",
+      "weight": 1.0,
+      "detail": "canonical for 'Topic Modeling' (1443 vs 158 citations)"
+    },
+    {
+      "prereq": "W2962985038",
+      "dependent": "W2912924812",
+      "reason": "cites_and_predates",
+      "weight": 3.0,
+      "detail": "2019 paper cites 2017 paper"
+    },
+    {
+      "prereq": "W3015883388",
+      "dependent": "W3087273879",
+      "reason": "canonical_for_shared_concept",
+      "weight": 1.0,
+      "detail": "canonical for 'Topic Modeling' (142 vs 33 citations)"
+    },
+    {
+      "prereq": "W3015883388",
+      "dependent": "W3094336525",
+      "reason": "canonical_for_shared_concept",
+      "weight": 1.0,
+      "detail": "canonical for 'Topic Modeling' (142 vs 21 citations)"
+    },
+    {
+      "prereq": "W3015883388",
+      "dependent": "W3118027562",
+      "reason": "canonical_for_shared_concept",
+      "weight": 1.0,
+      "detail": "canonical for 'Topic Modeling' (142 vs 29 citations)"
+    }
+  ],
+  "implied_edges_removed": [
+    {
+      "prereq": "W2029118765",
+      "dependent": "W3015883388",
+      "reason": "cites_and_predates",
+      "weight": 3.0,
+      "detail": "2020 paper cites 2003 paper"
+    },
+    {
+      "prereq": "W2029118765",
+      "dependent": "W3087273879",
+      "reason": "canonical_for_shared_concept",
+      "weight": 1.0,
+      "detail": "canonical for 'Topic Modeling' (235 vs 33 citations)"
+    },
+    {
+      "prereq": "W2029118765",
+      "dependent": "W3094336525",
+      "reason": "canonical_for_shared_concept",
+      "weight": 1.0,
+      "detail": "canonical for 'Topic Modeling' (235 vs 21 citations)"
+    },
+    {
+      "prereq": "W2029118765",
+      "dependent": "W3118027562",
+      "reason": "canonical_for_shared_concept",
+      "weight": 1.0,
+      "detail": "canonical for 'Topic Modeling' (235 vs 29 citations)"
+    },
+    {
+      "prereq": "W2086511124",
+      "dependent": "W2938205538",
+      "reason": "canonical_for_shared_concept",
+      "weight": 1.0,
+      "detail": "canonical for 'question answering' (859 vs 37 citations)"
+    },
+    {
+      "prereq": "W2086511124",
+      "dependent": "W3015883388",
+      "reason": "cites_and_predates",
+      "weight": 3.0,
+      "detail": "2020 paper cites 1999 paper"
+    },
+    {
+      "prereq": "W2086511124",
+      "dependent": "W3039017601",
+      "reason": "cites_and_predates",
+      "weight": 3.0,
+      "detail": "2021 paper cites 1999 paper"
+    },
+    {
+      "prereq": "W2086511124",
+      "dependent": "W3087273879",
+      "reason": "canonical_for_shared_concept",
+      "weight": 1.0,
+      "detail": "canonical for 'question answering' (859 vs 33 citations)"
+    },
+    {
+      "prereq": "W2086511124",
+      "dependent": "W3118027562",
+      "reason": "cites_and_predates",
+      "weight": 3.0,
+      "detail": "2020 paper cites 1999 paper"
+    },
+    {
+      "prereq": "W2788448041",
+      "dependent": "W3015883388",
+      "reason": "cites_and_predates",
+      "weight": 3.0,
+      "detail": "2020 paper cites 2018 paper"
+    },
+    {
+      "prereq": "W2788448041",
+      "dependent": "W3087273879",
+      "reason": "canonical_for_shared_concept",
+      "weight": 1.0,
+      "detail": "canonical for 'Topic Modeling' (230 vs 33 citations)"
+    },
+    {
+      "prereq": "W2788448041",
+      "dependent": "W3094336525",
+      "reason": "canonical_for_shared_concept",
+      "weight": 1.0,
+      "detail": "canonical for 'Topic Modeling' (230 vs 21 citations)"
+    },
+    {
+      "prereq": "W2788448041",
+      "dependent": "W3118027562",
+      "reason": "canonical_for_shared_concept",
+      "weight": 1.0,
+      "detail": "canonical for 'Topic Modeling' (230 vs 29 citations)"
+    },
+    {
+      "prereq": "W2799081691",
+      "dependent": "W3015883388",
+      "reason": "cites_and_predates",
+      "weight": 3.0,
+      "detail": "2020 paper cites 2018 paper"
+    },
+    {
+      "prereq": "W2799081691",
+      "dependent": "W3087273879",
+      "reason": "canonical_for_shared_concept",
+      "weight": 1.0,
+      "detail": "canonical for 'Topic Modeling' (158 vs 33 citations)"
+    },
+    {
+      "prereq": "W2799081691",
+      "dependent": "W3094336525",
+      "reason": "canonical_for_shared_concept",
+      "weight": 1.0,
+      "detail": "canonical for 'Topic Modeling' (158 vs 21 citations)"
+    },
+    {
+      "prereq": "W2799081691",
+      "dependent": "W3118027562",
+      "reason": "canonical_for_shared_concept",
+      "weight": 1.0,
+      "detail": "canonical for 'Topic Modeling' (158 vs 29 citations)"
+    },
+    {
+      "prereq": "W2909544278",
+      "dependent": "W3015883388",
+      "reason": "cites_and_predates",
+      "weight": 3.0,
+      "detail": "2020 paper cites 2019 paper"
+    },
+    {
+      "prereq": "W2909544278",
+      "dependent": "W3087273879",
+      "reason": "canonical_for_shared_concept",
+      "weight": 1.0,
+      "detail": "canonical for 'Topic Modeling' (346 vs 33 citations)"
+    },
+    {
+      "prereq": "W2909544278",
+      "dependent": "W3094336525",
+      "reason": "cites_and_predates",
+      "weight": 3.0,
+      "detail": "2020 paper cites 2019 paper"
+    },
+    {
+      "prereq": "W2909544278",
+      "dependent": "W3118027562",
+      "reason": "canonical_for_shared_concept",
+      "weight": 1.0,
+      "detail": "canonical for 'Topic Modeling' (346 vs 29 citations)"
+    },
+    {
+      "prereq": "W2912817604",
+      "dependent": "W3015883388",
+      "reason": "cites_and_predates",
+      "weight": 3.0,
+      "detail": "2020 paper cites 2019 paper"
+    },
+    {
+      "prereq": "W2912817604",
+      "dependent": "W3087273879",
+      "reason": "canonical_for_shared_concept",
+      "weight": 1.0,
+      "detail": "canonical for 'Topic Modeling' (369 vs 33 citations)"
+    },
+    {
+      "prereq": "W2912817604",
+      "dependent": "W3094336525",
+      "reason": "canonical_for_shared_concept",
+      "weight": 1.0,
+      "detail": "canonical for 'Topic Modeling' (369 vs 21 citations)"
+    },
+    {
+      "prereq": "W2912817604",
+      "dependent": "W3118027562",
+      "reason": "canonical_for_shared_concept",
+      "weight": 1.0,
+      "detail": "canonical for 'Topic Modeling' (369 vs 29 citations)"
+    },
+    {
+      "prereq": "W2912924812",
+      "dependent": "W2938205538",
+      "reason": "canonical_for_shared_concept",
+      "weight": 1.0,
+      "detail": "canonical for 'Topic Modeling' (2061 vs 37 citations)"
+    },
+    {
+      "prereq": "W2912924812",
+      "dependent": "W3015883388",
+      "reason": "cites_and_predates",
+      "weight": 3.0,
+      "detail": "2020 paper cites 2019 paper"
+    },
+    {
+      "prereq": "W2912924812",
+      "dependent": "W3039017601",
+      "reason": "cites_and_predates",
+      "weight": 3.0,
+      "detail": "2021 paper cites 2019 paper"
+    },
+    {
+      "prereq": "W2912924812",
+      "dependent": "W3087273879",
+      "reason": "cites_and_predates",
+      "weight": 3.0,
+      "detail": "2020 paper cites 2019 paper"
+    },
+    {
+      "prereq": "W2912924812",
+      "dependent": "W3094336525",
+      "reason": "cites_and_predates",
+      "weight": 3.0,
+      "detail": "2020 paper cites 2019 paper"
+    },
+    {
+      "prereq": "W2912924812",
+      "dependent": "W3118027562",
+      "reason": "cites_and_predates",
+      "weight": 3.0,
+      "detail": "2020 paper cites 2019 paper"
+    },
+    {
+      "prereq": "W2912924812",
+      "dependent": "W3206455169",
+      "reason": "cites_and_predates",
+      "weight": 3.0,
+      "detail": "2021 paper cites 2019 paper"
+    },
+    {
+      "prereq": "W2962985038",
+      "dependent": "W2909544278",
+      "reason": "canonical_for_shared_concept",
+      "weight": 1.0,
+      "detail": "canonical for 'Topic Modeling' (1443 vs 346 citations)"
+    },
+    {
+      "prereq": "W2962985038",
+      "dependent": "W2912817604",
+      "reason": "cites_and_predates",
+      "weight": 3.0,
+      "detail": "2019 paper cites 2017 paper"
+    },
+    {
+      "prereq": "W2962985038",
+      "dependent": "W2938205538",
+      "reason": "canonical_for_shared_concept",
+      "weight": 1.0,
+      "detail": "canonical for 'Topic Modeling' (1443 vs 37 citations)"
+    },
+    {
+      "prereq": "W2962985038",
+      "dependent": "W3015883388",
+      "reason": "canonical_for_shared_concept",
+      "weight": 1.0,
+      "detail": "canonical for 'Topic Modeling' (1443 vs 142 citations)"
+    },
+    {
+      "prereq": "W2962985038",
+      "dependent": "W3039017601",
+      "reason": "canonical_for_shared_concept",
+      "weight": 1.0,
+      "detail": "canonical for 'Topic Modeling' (1443 vs 99 citations)"
+    },
+    {
+      "prereq": "W2962985038",
+      "dependent": "W3087273879",
+      "reason": "canonical_for_shared_concept",
+      "weight": 1.0,
+      "detail": "canonical for 'Topic Modeling' (1443 vs 33 citations)"
+    },
+    {
+      "prereq": "W2962985038",
+      "dependent": "W3094336525",
+      "reason": "canonical_for_shared_concept",
+      "weight": 1.0,
+      "detail": "canonical for 'Topic Modeling' (1443 vs 21 citations)"
+    },
+    {
+      "prereq": "W2962985038",
+      "dependent": "W3118027562",
+      "reason": "canonical_for_shared_concept",
+      "weight": 1.0,
+      "detail": "canonical for 'Topic Modeling' (1443 vs 29 citations)"
+    },
+    {
+      "prereq": "W2962985038",
+      "dependent": "W3206455169",
+      "reason": "canonical_for_shared_concept",
+      "weight": 1.0,
+      "detail": "canonical for 'Topic Modeling' (1443 vs 151 citations)"
+    }
+  ],
+  "cycle_drops": [],
+  "diagnostics": {
+    "rule_counts": {
+      "cites_and_predates": 26,
+      "canonical_for_shared_concept": 36,
+      "appears_in_related_work": 0
+    },
+    "undated_citation_pairs_skipped": 0,
+    "related_work_available": false,
+    "citation_dominance_ratio": 3.0,
+    "candidate_papers": 15,
+    "prereq_edges_derived": 62,
+    "prereq_edges_displayed": 21,
+    "implied_edges_removed": 41,
+    "edges_per_node": 1.4,
+    "canvas_legible": {
+      "ok": true,
+      "max_rows_in_a_tier": 4,
+      "edges_per_node": 1.4,
+      "reasons": []
+    },
+    "nodes_kept": 15,
+    "nodes_pruned": 26,
+    "pruned_ids": [
+      "W3168875417",
+      "W2251818205",
+      "W2970482702",
+      "W3118999024",
+      "W3198691721",
+      "W2889787757",
+      "W3007672467",
+      "W3111425437",
+      "W2970476646",
+      "W2252136820",
+      "W2251079237",
+      "W2970641574",
+      "W3037128914",
+      "W3214455632",
+      "W4406728516",
+      "W2131726681",
+      "W2104009457",
+      "W4389519118",
+      "W2786148476",
+      "W3197876970",
+      "W3034654340",
+      "W4385573970",
+      "W2593864460",
+      "W2963341956",
+      "W4385570369",
+      "W2607303097"
+    ],
+    "pruned_by": "necessity_score",
+    "cycles_broken": 0,
+    "max_nodes": 15,
+    "max_tiers": 6
+  },
+  "provenance": {
+    "synapse_version": "0.1.0",
+    "git_revision": null,
+    "created_at": "2026-08-10T18:00:34.216942+00:00",
+    "python": "3.12.3",
+    "platform": "Linux-6.8.0-94-generic-x86_64-with-glibc2.39",
+    "config": {
+      "seed": 20260810,
+      "paths": {
+        "db": "data/synapse.sqlite",
+        "runs": "runs",
+        "cache_ttl_days": 0
+      },
+      "ingest_source": "openalex",
+      "openalex": {
+        "base_url": "https://api.openalex.org",
+        "mailto": "kadambakananadas@yahoo.com",
+        "requests_per_second": 5.0,
+        "max_retries": 5,
+        "backoff_base_seconds": 2.0,
+        "backoff_max_seconds": 60.0,
+        "timeout_seconds": 30
+      },
+      "s2": {
+        "base_url": "https://api.semanticscholar.org/graph/v1",
+        "requests_per_second": 0.15,
+        "max_retries": 10,
+        "backoff_base_seconds": 4.0,
+        "backoff_max_seconds": 60.0,
+        "timeout_seconds": 30
+      },
+      "corpus": {
+        "hops": 2,
+        "max_papers": 500,
+        "max_refs_per_paper": 25,
+        "max_cites_per_paper": 25,
+        "min_abstract_chars": 80
+      },
+      "concepts": {
+        "extractor": "yake",
+        "top_k_per_paper": 8,
+        "ngram_max": 3,
+        "dedupe_threshold": 0.85,
+        "min_papers_per_concept": 2
+      },
+      "retrieval": {
+        "bm25": {
+          "k1": 1.5,
+          "b": 0.75
+        },
+        "dense": {
+          "model": "sentence-transformers/all-MiniLM-L6-v2",
+          "batch_size": 32,
+          "normalize": true
+        },
+        "rrf": {
+          "k": 60
+        },
+        "ppr": {
+          "alpha": 0.15,
+          "max_iterations": 200,
+          "tolerance": 1e-10,
+          "edge_weights": {
+            "cites": 1.0,
+            "cited_by": 1.0,
+            "authored_by": 0.6,
+            "published_in": 0.3,
+            "shares_concept": 0.5
+          },
+          "attribution": {
+            "max_depth": 3,
+            "min_flow_fraction": 0.01,
+            "max_edges_per_candidate": 40
+          }
+        },
+        "fusion": {
+          "rrf_weight": 0.6,
+          "ppr_weight": 0.4
+        },
+        "candidate_pool": 200,
+        "top_k": 20
+      },
+      "explain": {
+        "metapath": {
+          "max_path_length": 3,
+          "max_paths": 12,
+          "relations": [
+            "shared_author",
+            "co_citation",
+            "shared_concept",
+            "shared_venue",
+            "direct_citation"
+          ]
+        },
+        "llm": {
+          "provider": "openrouter",
+          "base_url": "https://openrouter.ai/api/v1",
+          "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+          "fallback_models": [
+            "google/gemma-4-31b-it:free",
+            "nvidia/nemotron-3-super-120b-a12b:free",
+            "openai/gpt-oss-20b:free"
+          ],
+          "temperature": 0.0,
+          "max_tokens": 900,
+          "timeout_seconds": 120,
+          "max_retries": 4
+        }
+      },
+      "ablate": {
+        "random_control_trials": 30,
+        "bootstrap_samples": 2000,
+        "confidence_level": 0.95,
+        "significance_alpha": 0.05,
+        "sufficiency": true
+      },
+      "tree": {
+        "max_nodes": 15,
+        "max_tiers": 6,
+        "citation_dominance_ratio": 3.0,
+        "prune_by": "necessity_score"
+      },
+      "eval": {
+        "datasets": [
+          "s2orc",
+          "dblp"
+        ],
+        "ndcg_k": 10,
+        "retrieval_ablations": [
+          "bm25-only",
+          "dense-only",
+          "rrf-only",
+          "rrf+ppr"
+        ]
+      }
+    },
+    "corpus": {
+      "papers": 500,
+      "authors": 1821,
+      "venues": 119,
+      "concepts": 478,
+      "edges": {
+        "authored_by": 2310,
+        "cites": 1452,
+        "published_in": 287,
+        "shares_concept": 2872
+      },
+      "sources": {
+        "openalex": 500
+      },
+      "edge_digest": "928aaea49117d64d"
+    }
+  }
+}

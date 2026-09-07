@@ -1,0 +1,347 @@
+{
+  "dataset": "primary",
+  "seeds": [
+    "W2972317931",
+    "W2973154071",
+    "W3015883388",
+    "W3016913119",
+    "W3034439313"
+  ],
+  "ndcg_k": 10,
+  "retrieval": [
+    {
+      "signals": "bm25-only",
+      "ndcg": {
+        "n": 5,
+        "mean": 0.20132351830588618,
+        "median": 0.1627618861993415,
+        "std": 0.1618102950446099,
+        "ci_low": 0.08254600052269563,
+        "ci_high": 0.3383810989695723,
+        "confidence": 0.95,
+        "min": 0.0,
+        "max": 0.4311257027166112
+      },
+      "mrr": {
+        "n": 5,
+        "mean": 0.41666666666666663,
+        "median": 0.3333333333333333,
+        "std": 0.3435921354681384,
+        "ci_low": 0.18333333333333335,
+        "ci_high": 0.7333333333333333,
+        "confidence": 0.95,
+        "min": 0.08333333333333333,
+        "max": 1.0
+      }
+    },
+    {
+      "signals": "dense-only",
+      "ndcg": {
+        "n": 5,
+        "mean": 0.240346181666872,
+        "median": 0.263844135868928,
+        "std": 0.17369663839868868,
+        "ci_low": 0.1055376543475712,
+        "ci_high": 0.373057547688031,
+        "confidence": 0.95,
+        "min": 0.0,
+        "max": 0.4162961617800439
+      },
+      "mrr": {
+        "n": 5,
+        "mean": 0.3125,
+        "median": 0.3333333333333333,
+        "std": 0.15728821740147395,
+        "ci_low": 0.17083333333333334,
+        "ci_high": 0.4333333333333333,
+        "confidence": 0.95,
+        "min": 0.0625,
+        "max": 0.5
+      }
+    },
+    {
+      "signals": "rrf-only",
+      "ndcg": {
+        "n": 5,
+        "mean": 0.2367986756985867,
+        "median": 0.2153946144240359,
+        "std": 0.16974209351453956,
+        "ci_low": 0.10226205689181762,
+        "ci_high": 0.3713352945053558,
+        "confidence": 0.95,
+        "min": 0.06281471737590513,
+        "max": 0.43583448973770433
+      },
+      "mrr": {
+        "n": 5,
+        "mean": 0.3733333333333333,
+        "median": 0.3333333333333333,
+        "std": 0.12780193008453875,
+        "ci_low": 0.27999999999999997,
+        "ci_high": 0.4666666666666666,
+        "confidence": 0.95,
+        "min": 0.2,
+        "max": 0.5
+      }
+    },
+    {
+      "signals": "rrf+ppr",
+      "ndcg": {
+        "n": 5,
+        "mean": 0.5904926961419503,
+        "median": 0.5880245754957205,
+        "std": 0.052183663785990625,
+        "ci_low": 0.5509416303012966,
+        "ci_high": 0.6362238368163237,
+        "confidence": 0.95,
+        "min": 0.5252751575239334,
+        "max": 0.6708806426217222
+      },
+      "mrr": {
+        "n": 5,
+        "mean": 0.8,
+        "median": 1.0,
+        "std": 0.27386127875258304,
+        "ci_low": 0.6,
+        "ci_high": 1.0,
+        "confidence": 0.95,
+        "min": 0.5,
+        "max": 1.0
+      }
+    }
+  ],
+  "explainers": [
+    {
+      "explainer": "metapath",
+      "n_candidates": 100,
+      "n_testable": 100,
+      "n_faithful": 58,
+      "faithful_fraction": 0.58,
+      "displacement": {
+        "n": 100,
+        "mean": 13.74,
+        "median": 11.0,
+        "std": 12.718887569677664,
+        "ci_low": 11.389000000000003,
+        "ci_high": 16.4405,
+        "confidence": 0.95,
+        "min": 0.0,
+        "max": 89.0
+      },
+      "necessity": {
+        "n": 100,
+        "mean": 0.028242553858776692,
+        "median": 0.02258736423126223,
+        "std": 0.02680129794800768,
+        "ci_low": 0.023319523573325212,
+        "ci_high": 0.03395368708788203,
+        "confidence": 0.95,
+        "min": 0.0,
+        "max": 0.19098712446351931
+      },
+      "control_displacement": {
+        "n": 100,
+        "mean": 1.389333333333333,
+        "median": 0.9166666666666667,
+        "std": 1.7076041722186894,
+        "ci_low": 1.0583166666666668,
+        "ci_high": 1.7407166666666665,
+        "confidence": 0.95,
+        "min": -1.1333333333333333,
+        "max": 6.1
+      },
+      "control_necessity": {
+        "n": 100,
+        "mean": 0.0028316794091619163,
+        "median": 0.001863832600028919,
+        "std": 0.0034882424495024673,
+        "ci_low": 0.002164310004178072,
+        "ci_high": 0.0035475257625127857,
+        "confidence": 0.95,
+        "min": -0.0023367697594501723,
+        "max": 0.012517882689556508
+      },
+      "paired_test": {
+        "test": "paired_permutation",
+        "n": 100,
+        "statistic": 12.350666666666665,
+        "p_value": 9.999000099990002e-05,
+        "mean_difference": 12.350666666666665,
+        "effect_size": 1.0195698656072996,
+        "significant": true,
+        "alpha": 0.05
+      },
+      "sufficiency_retention": {
+        "n": 100,
+        "mean": 1.0203048099353214,
+        "median": 1.0194086223446432,
+        "std": 0.013843730129135699,
+        "ci_low": 1.017708340292325,
+        "ci_high": 1.0232372490329908,
+        "confidence": 0.95,
+        "min": 1.0,
+        "max": 1.0686695278969958
+      },
+      "mean_cited_edges": 10.37,
+      "empty_explanations": 0,
+      "unrealised_claim_count": 0
+    }
+  ],
+  "skipped_explainers": [
+    "llm-grounded",
+    "llm-free"
+  ],
+  "provenance": {
+    "synapse_version": "0.1.0",
+    "git_revision": null,
+    "created_at": "2026-08-10T18:03:49.942361+00:00",
+    "python": "3.12.3",
+    "platform": "Linux-6.8.0-94-generic-x86_64-with-glibc2.39",
+    "config": {
+      "seed": 20260810,
+      "paths": {
+        "db": "data/synapse.sqlite",
+        "runs": "runs",
+        "cache_ttl_days": 0
+      },
+      "ingest_source": "openalex",
+      "openalex": {
+        "base_url": "https://api.openalex.org",
+        "mailto": "kadambakananadas@yahoo.com",
+        "requests_per_second": 5.0,
+        "max_retries": 5,
+        "backoff_base_seconds": 2.0,
+        "backoff_max_seconds": 60.0,
+        "timeout_seconds": 30
+      },
+      "s2": {
+        "base_url": "https://api.semanticscholar.org/graph/v1",
+        "requests_per_second": 0.15,
+        "max_retries": 10,
+        "backoff_base_seconds": 4.0,
+        "backoff_max_seconds": 60.0,
+        "timeout_seconds": 30
+      },
+      "corpus": {
+        "hops": 2,
+        "max_papers": 500,
+        "max_refs_per_paper": 25,
+        "max_cites_per_paper": 25,
+        "min_abstract_chars": 80
+      },
+      "concepts": {
+        "extractor": "yake",
+        "top_k_per_paper": 8,
+        "ngram_max": 3,
+        "dedupe_threshold": 0.85,
+        "min_papers_per_concept": 2
+      },
+      "retrieval": {
+        "bm25": {
+          "k1": 1.5,
+          "b": 0.75
+        },
+        "dense": {
+          "model": "sentence-transformers/all-MiniLM-L6-v2",
+          "batch_size": 32,
+          "normalize": true
+        },
+        "rrf": {
+          "k": 60
+        },
+        "ppr": {
+          "alpha": 0.15,
+          "max_iterations": 200,
+          "tolerance": 1e-10,
+          "edge_weights": {
+            "cites": 1.0,
+            "cited_by": 1.0,
+            "authored_by": 0.6,
+            "published_in": 0.3,
+            "shares_concept": 0.5
+          },
+          "attribution": {
+            "max_depth": 3,
+            "min_flow_fraction": 0.01,
+            "max_edges_per_candidate": 40
+          }
+        },
+        "fusion": {
+          "rrf_weight": 0.6,
+          "ppr_weight": 0.4
+        },
+        "candidate_pool": 200,
+        "top_k": 20
+      },
+      "explain": {
+        "metapath": {
+          "max_path_length": 3,
+          "max_paths": 12,
+          "relations": [
+            "shared_author",
+            "co_citation",
+            "shared_concept",
+            "shared_venue",
+            "direct_citation"
+          ]
+        },
+        "llm": {
+          "provider": "openrouter",
+          "base_url": "https://openrouter.ai/api/v1",
+          "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+          "fallback_models": [
+            "google/gemma-4-31b-it:free",
+            "nvidia/nemotron-3-super-120b-a12b:free",
+            "openai/gpt-oss-20b:free"
+          ],
+          "temperature": 0.0,
+          "max_tokens": 900,
+          "timeout_seconds": 120,
+          "max_retries": 4
+        }
+      },
+      "ablate": {
+        "random_control_trials": 30,
+        "bootstrap_samples": 2000,
+        "confidence_level": 0.95,
+        "significance_alpha": 0.05,
+        "sufficiency": true
+      },
+      "tree": {
+        "max_nodes": 15,
+        "max_tiers": 6,
+        "citation_dominance_ratio": 3.0,
+        "prune_by": "necessity_score"
+      },
+      "eval": {
+        "datasets": [
+          "s2orc",
+          "dblp"
+        ],
+        "ndcg_k": 10,
+        "retrieval_ablations": [
+          "bm25-only",
+          "dense-only",
+          "rrf-only",
+          "rrf+ppr"
+        ]
+      }
+    },
+    "corpus": {
+      "papers": 500,
+      "authors": 1821,
+      "venues": 119,
+      "concepts": 478,
+      "edges": {
+        "authored_by": 2310,
+        "cites": 1452,
+        "published_in": 287,
+        "shares_concept": 2872
+      },
+      "sources": {
+        "openalex": 500
+      },
+      "edge_digest": "928aaea49117d64d"
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "source": "openalex",
+  "corpus": {
+    "papers": 500,
+    "authors": 1821,
+    "venues": 119,
+    "concepts": 0,
+    "edges_by_relation": {
+      "authored_by": 2310,
+      "cites": 1452,
+      "published_in": 287
+    },
+    "seeds_resolved": [
+      "W3015883388",
+      "W3016913119",
+      "W3034439313",
+      "W2972317931",
+      "W2973154071"
+    ],
+    "seeds_missing": [],
+    "fetch": {
+      "cache_hits": 0,
+      "network_calls": 28,
+      "rate_limit_waits": 0,
+      "failures": 0,
+      "total_wait_seconds": 0.0
+    },
+    "frontier_truncated": true,
+    "expansion_failed": false
+  },
+  "elapsed_seconds": 35.7,
+  "papers": 500,
+  "authors": 1821,
+  "venues": 119,
+  "concepts": 478,
+  "edges": {
+    "authored_by": 2310,
+    "cites": 1452,
+    "published_in": 287,
+    "shares_concept": 2872
+  }
+}

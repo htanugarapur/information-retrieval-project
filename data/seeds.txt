@@ -1,0 +1,23 @@
+# Seed papers for the primary Synapse corpus.
+#
+# Chosen to span scholarly retrieval AND explanation faithfulness, because the
+# ablation protocol needs a neighbourhood where both literatures are present:
+# retrieval papers supply the ranking signal, explainability papers supply the
+# concepts an explanation would plausibly cite.
+#
+# Ids are pinned to explicit OpenAlex work ids for reproducibility. Resolving
+# these from arXiv ids is unreliable -- OpenAlex indexes published versions under
+# the publisher DOI, so DPR and SPECTER both 404 on their arXiv DOI. A pinned id
+# cannot silently resolve to the wrong paper, which a title search can.
+#
+# Accepted forms, one per line:
+#   W3015883388                 OpenAlex work id  (preferred)
+#   arXiv:2004.12832            arXiv id
+#   10.1145/3397271.3401075     DOI
+#   title:Exact Paper Title     exact case-insensitive title match
+
+W3015883388   # Dense Passage Retrieval for Open-Domain Question Answering (2020)
+W3016913119   # SPECTER: Document-level Representation Learning using Citation-informed Transformers (2020)
+W3034439313   # ColBERT: Efficient and Effective Passage Search via Contextualized Late Interaction
+W2972317931   # GNNExplainer: Generating Explanations for Graph Neural Networks
+W2973154071   # SciBERT: A Pretrained Language Model for Scientific Text

@@ -1,0 +1,143 @@
+# Synapse configuration.
+#
+# Everything that can change a ranking lives here, so a run artifact plus this
+# file is enough to reconstruct any result. Tune ONLY against NDCG (see
+# guardrails in README); faithfulness is measured once, frozen.
+
+seed: 20260810
+
+paths:
+  db: data/synapse.sqlite
+  runs: runs
+  cache_ttl_days: 0        # 0 = never expire; a cached S2 record is never re-fetched.
+
+# Which API builds the primary corpus.
+#   s2       - Semantic Scholar, as originally specified. Needs S2_API_KEY in
+#              practice: the shared pool returned 429 on every request from this
+#              host on 2026-08-10 after a short burst.
+#   openalex - same graph structure (citations, authorships, venues, topics),
+#              open rate limit, no key. Normalises into the identical schema.
+# Corpus provenance is recorded in every run artifact either way.
+ingest_source: openalex
+
+openalex:
+  base_url: https://api.openalex.org
+  # OpenAlex asks callers to identify themselves in exchange for the faster
+  # "polite pool". Set OPENALEX_MAILTO in your environment; left blank here so a
+  # personal address is not committed to a repo intended to accompany a paper.
+  mailto: ""
+  requests_per_second: 5.0
+  max_retries: 5
+  backoff_base_seconds: 2.0
+  backoff_max_seconds: 60.0
+  timeout_seconds: 30
+
+s2:
+  base_url: https://api.semanticscholar.org/graph/v1
+  # S2_API_KEY env var is used when present. Without it we ride the shared
+  # unauthenticated pool, which 429s aggressively -- hence the slow defaults.
+  # Measured on the shared pool 2026-08-10: roughly one success per 2-3 attempts
+  # at 12s spacing. These numbers are tuned to that, not to the documented limit.
+  requests_per_second: 0.15
+  max_retries: 10
+  backoff_base_seconds: 4.0
+  backoff_max_seconds: 60.0
+  timeout_seconds: 30
+
+corpus:
+  hops: 2
+  max_papers: 500          # raise to 5000 once an S2_API_KEY is present
+  max_refs_per_paper: 25   # tight neighbourhood: interconnection beats breadth
+  max_cites_per_paper: 25  # for PPR paths, and the shared pool is slow
+  min_abstract_chars: 80
+
+concepts:
+  # YAKE over KeyBERT: KeyBERT needs a transformer forward pass per document and
+  # its output shifts with the embedding model, which would couple concept-node
+  # identity to the dense retriever we are trying to hold fixed. YAKE is
+  # statistical, deterministic, CPU-cheap, and independent of every other
+  # component -- so a concept edge is an isolable cause, not a second embedding.
+  extractor: yake
+  top_k_per_paper: 8
+  ngram_max: 3
+  dedupe_threshold: 0.85
+  min_papers_per_concept: 2   # a concept linking <2 papers cannot carry a path
+
+retrieval:
+  bm25:
+    k1: 1.5
+    b: 0.75
+  dense:
+    model: sentence-transformers/all-MiniLM-L6-v2
+    # swap to allenai/specter2_base to test embedding sensitivity
+    batch_size: 32
+    normalize: true
+  rrf:
+    k: 60
+  ppr:
+    alpha: 0.15             # teleport probability
+    # 60 iterations left a residual of 1.4e-08 against a 1e-10 tolerance on the
+    # 500-paper corpus, i.e. it stopped on the iteration cap rather than on
+    # convergence. 200 converges with room to spare and costs milliseconds.
+    max_iterations: 200
+    tolerance: 1.0e-10
+    edge_weights:           # relative weight by edge type during propagation
+      cites: 1.0
+      cited_by: 1.0
+      authored_by: 0.6
+      published_in: 0.3
+      shares_concept: 0.5
+    attribution:
+      max_depth: 3          # hops traced backward from a candidate
+      min_flow_fraction: 0.01   # prune branches under 1% of the candidate's mass
+      max_edges_per_candidate: 40
+  fusion:
+    rrf_weight: 0.6
+    ppr_weight: 0.4
+  candidate_pool: 200
+  top_k: 20
+
+explain:
+  metapath:
+    max_path_length: 3
+    max_paths: 12
+    relations: [shared_author, co_citation, shared_concept, shared_venue, direct_citation]
+  llm:
+    provider: openrouter
+    base_url: https://openrouter.ai/api/v1
+    # Free-tier default. `synapse models --free` lists what is currently free,
+    # and the client falls back down this list on 429/unavailable.
+    model: nvidia/nemotron-3-ultra-550b-a55b:free
+    fallback_models:
+      - google/gemma-4-31b-it:free
+      - nvidia/nemotron-3-super-120b-a12b:free
+      - openai/gpt-oss-20b:free
+    temperature: 0.0
+    max_tokens: 900
+    timeout_seconds: 120
+    max_retries: 4
+
+ablate:
+  # The random-edge control is built first and runs on every ablation. An
+  # explanation whose displacement is not clearly above this control is
+  # unfaithful, and the harness reports that rather than hiding it.
+  # 30 trials puts the smallest achievable per-candidate p-value at 1/31 = 0.032,
+  # comfortably under alpha=0.05. At 20 trials the floor is 0.048 and a case
+  # could only reach significance if every single control trial came in lower --
+  # the test would be technically valid and practically useless.
+  random_control_trials: 30
+  bootstrap_samples: 2000
+  confidence_level: 0.95
+  significance_alpha: 0.05
+  sufficiency: true
+
+tree:
+  max_nodes: 15
+  max_tiers: 6
+  citation_dominance_ratio: 3.0   # A is canonical for a concept if cites(A) >= 3x cites(B)
+  prune_by: necessity_score
+
+eval:
+  datasets: [s2orc, dblp]
+  ndcg_k: 10
+  retrieval_ablations: [bm25-only, dense-only, rrf-only, rrf+ppr]

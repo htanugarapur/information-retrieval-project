@@ -1,0 +1,20 @@
+{
+  "trees": [
+    {
+      "file": "tree_W3015883388.json",
+      "seed": "W3015883388",
+      "title": "Dense Passage Retrieval for Open-Domain Question Answering",
+      "nodes": 15,
+      "tiers": 6
+    }
+  ],
+  "ablations": [
+    {
+      "file": "ablate_W3015883388.json",
+      "seed": "W3015883388",
+      "explainers": [
+        "metapath"
+      ]
+    }
+  ]
+}

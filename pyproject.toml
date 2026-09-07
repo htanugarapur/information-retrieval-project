@@ -1,0 +1,22 @@
+[project]
+name = "synapse-ir"
+version = "0.1.0"
+description = "A measurement instrument for scholarly retrieval explanation faithfulness"
+requires-python = ">=3.11"
+dependencies = [
+  "numpy", "scipy", "networkx", "rank_bm25", "pyyaml", "requests",
+  "typer>=0.12", "yake", "sentence-transformers",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "pytest-cov"]
+
+[project.scripts]
+synapse = "synapse.cli:app"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+filterwarnings = ["ignore::DeprecationWarning"]
+
+[tool.setuptools]
+packages = ["synapse"]

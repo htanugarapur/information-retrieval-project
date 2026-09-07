@@ -1,0 +1,34 @@
+# Environment
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Test and coverage output
+.pytest_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# The sqlite cache: API responses AND cached LLM prompts/completions.
+# Deliberately NOT committed — it is 8 MB, fully rebuildable (`synapse build`
+# takes ~36 s against OpenAlex), and it holds prompt/completion text that has no
+# business in a repo meant to accompany a paper.
+data/*.sqlite
+data/*.sqlite-wal
+data/*.sqlite-shm
+
+# Corpus dumps (see docs/CORPORA.md for how to obtain them)
+data/*.jsonl
+data/s2orc*
+data/dblp*
+
+# Scratch output. runs/*.json ARE committed — they are the evidence
+# paper/results.md is generated from — but transient files are not.
+runs/_*
+runs/*.log
+runs/*.png
