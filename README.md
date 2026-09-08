@@ -1,12 +1,18 @@
 <div align="center">
 
-# ⚡ Synapse
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/banner-light.svg">
+  <img alt="Synapse — Does the explanation cause the ranking? Delete exactly the edges it cited, re-rank, and compare against a random-edge control." src="assets/banner-light.svg" width="100%">
+</picture>
 
 ### Every retrieval system tells you *why*. Almost none can prove it.
 
 **A measurement instrument for explanation faithfulness — not another ranker.**
 
 `Python 3.11+` · `215 tests` · `85% coverage` · `deterministic & offline-replayable`
+
+<sub>The r₀ → r₁ displacement drawn in the banner is illustrative. Measured values are in <a href="#where-it-stands-today">Where it stands today</a>.</sub>
 
 </div>
 
